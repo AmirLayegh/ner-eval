@@ -12,47 +12,97 @@ dotenv.load_dotenv()
 
 
 class LangExtractor:
-    def __init__(self, model_id="gemini-2.5-pro"):
+    def __init__(self, model_id: str="gpt-4o", file_path: str="data/science_ner_benchmark.json"):
         self.model_id = model_id
+        self.file_path = file_path
+        self.data = None
+        self.samples = None
+        self.prompt = None
+        self.examples = None
 
+    def set_data(self):
+        with open(self.file_path, 'r') as f:
+            data = json.load(f)
+            self.data = data
+            self.samples = data['samples']
+            self.entity_types = data['metadata']['entity_types']
     def set_prompt(self):
         self.prompt = textwrap.dedent("""
-        Extract the entities with the type company, person, location, product.
+        Extract the entities with the types of the following: {self.entity_types}.
         Use exact text for extraction. Do not paraphrase or overlap entities.
         """)
 
     def set_examples(self):
         self.examples = [
             lx.data.ExampleData(
-        text="Emil Eifrem is the CEO of Neo4j. He lives in San Francisco.",
-        extractions=[
-            lx.data.Extraction(
-                extraction_class="person",
-                extraction_text="Emil Eifrem",
+                text="They may also use Adenosine triphosphate, Nitric oxide, and ROS for signaling in the same ways that animals do.",
+                extractions=[
+                    lx.data.Extraction(
+                        extraction_class="chemicalcompound",
+                        extraction_text="Adenosine triphosphate",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="chemicalcompound",
+                        extraction_text="Nitric oxide",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="chemicalcompound",
+                        extraction_text="ROS",
+                    ),
+                ]
             ),
-            lx.data.Extraction(
-                extraction_class="company",
-                extraction_text="Neo4j",
-            ),
-            lx.data.Extraction(
-                extraction_class="location",
-                extraction_text="San Francisco",
-            ),
-            lx.data.Extraction(
-                extraction_class="location",
-                extraction_text="San Francisco",
+            lx.data.ExampleData(
+                text="August Kopff, a colleague of Wolf at Heidelberg, then discovered 617 Patroclus eight months after Achilles, and, in early 1907, he discovered the largest of all Jupiter trojans, 624 Hektor.",
+                extractions=[
+                    lx.data.Extraction(
+                        extraction_class="scientist",
+                        extraction_text="August Kopff",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="scientist",
+                        extraction_text="Wolf",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="location",
+                        extraction_text="Heidelberg",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="astronomicalobject",
+                        extraction_text="617 Patroclus",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="astronomicalobject",
+                        extraction_text="Achilles",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="misc",
+                        extraction_text="Jupiter trojans",
+                    ),
+                    lx.data.Extraction(
+                        extraction_class="astronomicalobject",
+                        extraction_text="624 Hektor",
+                    ),
+                ]
             ),
         ]
-    ),
-    ]
 
     def extract(self, text):
         return lx.extract(text, self.prompt, examples=self.examples, model_id=self.model_id)
     
     def run(self):
+        self.set_data()
         self.set_prompt()
         self.set_examples()
-        return self.extract(text)
+        results = []
+        total_time = 0
+        for sample in self.samples[:10]:
+            text = sample['text']
+            start_time = time.time()
+            entities = self.extract(text)
+            end_time = time.time()
+            total_time += end_time - start_time
+            results.append(entities)
+        return results, total_time/len(self.samples[:10])
 
    
 #             lx.data.Extraction(
@@ -77,10 +127,10 @@ class LangExtractor:
 
 
 
-text = "John Doe is a software engineer at Google. He lives in San Francisco."
+# text = "John Doe is a software engineer at Google. He lives in San Francisco."
 
-start_time = time.time()
-result = lx.extract(text, prompt, examples=examples, model_id="gemini-2.5-pro")
-end_time = time.time()
-print(result)
-print(f"Time taken: {end_time - start_time} seconds")
+# start_time = time.time()
+# result = lx.extract(text, prompt, examples=examples, model_id="gemini-2.5-pro")
+# end_time = time.time()
+# print(result)
+# print(f"Time taken: {end_time - start_time} seconds")

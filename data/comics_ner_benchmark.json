@@ -1,0 +1,1167 @@
+{
+  "metadata": {
+    "name": "Comics Character NER Benchmark",
+    "entity_types": [
+      "ComicsCharacter",
+      "Voice",
+      "Country",
+      "City",
+      "Place",
+      "Film",
+      "Organisation",
+      "Award",
+      "Person",
+      "Series"
+    ]
+  },
+  "samples": [
+    {
+      "id": "ont_10_comicscharacter_train_1",
+      "text": "Airman, AKA Drake Stevens was created by Harry Sahle and George Kapitan.",
+      "entities": [
+        {
+          "text": "Airman",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Harry Sahle",
+          "type": "Person"
+        },
+        {
+          "text": "George Kapitan",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_2",
+      "text": "The comic character Asterix, was created by Ren\u00e9 Goscinny and Albert Uderzo.",
+      "entities": [
+        {
+          "text": "Asterix",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Ren\u00e9 Goscinny",
+          "type": "Person"
+        },
+        {
+          "text": "Albert Uderzo",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_3",
+      "text": "Frenchman, Rene Goscinny created Asterix, the comic character who is sometimes called \"Ast\u00e9rix\".",
+      "entities": [
+        {
+          "text": "Asterix",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Ren\u00e9 Goscinny",
+          "type": "Person"
+        },
+        {
+          "text": "French people",
+          "type": "Country"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_4",
+      "text": "Rona Fairhead is the key person for the BBC which broadcast Bananaman and has its home at Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Rona Fairhead",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_5",
+      "text": "Rona Fairhead is a key person at the BBC, which is located in London. Bananaman was broadcast by the BBC.",
+      "entities": [
+        {
+          "text": "Rona Fairhead",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "London",
+          "type": "City"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_6",
+      "text": "Tony Hall, Baron Hall of Birkenhead is a key person at the BBC which has headquarters at Broadcasting House and broadcast Bananaman.",
+      "entities": [
+        {
+          "text": "Tony Hall, Baron Hall of Birkenhead",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_7",
+      "text": "Ballistic, also known as Kelvin Mao, is a fictional comic superhero created by Michael Manley and Doug Moench.",
+      "entities": [
+        {
+          "text": "Ballistic",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Doug Moench",
+          "type": "Person"
+        },
+        {
+          "text": "Michael Manley",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_8",
+      "text": "Bananaman the TV series was shown on the BBC which was founded by John Reith, 1st Baron Reith and is located in the Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "John Reith, 1st Baron Reith",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_9",
+      "text": "The BBC, which is located in London and broadcast Bananaman, was founded by John Reith 1st Baron Reith.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "London",
+          "type": "City"
+        },
+        {
+          "text": "John Reith, 1st Baron Reith",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_10",
+      "text": "Bill Oddie starred in Bananaman which was broadcast by the BBC and first aired on 3 October 1983.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_11",
+      "text": "Graeme Garden stars in Bananaman which is broadcast by the BBC and first aired on 3 October 1983.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Graeme Garden",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_12",
+      "text": "Bananaman, starring Jill Shilling, is broadcast by the BBC and first aired on 3rd October 1983.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Jill Shilling",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_13",
+      "text": "Billie Oddie who starred in Bananaman is Kate Hardie's son and was born in Lancashire.",
+      "entities": [
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Kate Hardie",
+          "type": "Person"
+        },
+        {
+          "text": "Lancashire",
+          "type": "Place"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_14",
+      "text": "Bill Oddie, who starred in Bananaman, was born in Rochdale and has a child called Kate Hardie.",
+      "entities": [
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Kate Hardie",
+          "type": "Person"
+        },
+        {
+          "text": "Rochdale",
+          "type": "Place"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_15",
+      "text": "Bananaman was broadcasted by STV, starring Graeme Garden it first aired on 3rd October 1983.",
+      "entities": [
+        {
+          "text": "Graeme Garden",
+          "type": "Person"
+        },
+        {
+          "text": "STV",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_16",
+      "text": "Jill Shilling starred in Bananaman which is broadcast by STV and first aired on 3 October 1983.",
+      "entities": [
+        {
+          "text": "Jill Shilling",
+          "type": "Person"
+        },
+        {
+          "text": "STV",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_17",
+      "text": "The BBC broadcast Bananaman, which was first aired on 10/03/1983 and starred Tim Brooke-Taylor.",
+      "entities": [
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_18",
+      "text": "Bananaman starred Tim Brooke-Taylor and was first broadcast by STV on 3 October 1983.",
+      "entities": [
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        },
+        {
+          "text": "STV",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_19",
+      "text": "Bananaman starred Tim Brooke-Taylor and was broadcast for the last time by STV on 15 April 1986.",
+      "entities": [
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        },
+        {
+          "text": "STV",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_20",
+      "text": "The character of Ben Urich, whose full name is Benjamin Urich, was created by Gene Colan and the comic book writer, Roger Mckenzie.",
+      "entities": [
+        {
+          "text": "Roger McKenzie",
+          "type": "Person"
+        },
+        {
+          "text": "Gene Colan",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_21",
+      "text": "The character of Ben Urich was created by the American, Gene Colan, and the comic book writer, Roger McKenzie.",
+      "entities": [
+        {
+          "text": "Roger McKenzie",
+          "type": "Person"
+        },
+        {
+          "text": "Gene Colan",
+          "type": "Person"
+        },
+        {
+          "text": "Americans",
+          "type": "Country"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_22",
+      "text": "The comic book character Ben Urich was created by Gene Colan and the comic book writer Roger Mckenzie, who is a US national.",
+      "entities": [
+        {
+          "text": "Roger McKenzie",
+          "type": "Person"
+        },
+        {
+          "text": "United States",
+          "type": "Country"
+        },
+        {
+          "text": "Gene Colan",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_23",
+      "text": "\"Mark Desmond,\" also known as the comic character Blockbuster, was created by Carmine Infantino and Tom Lyle.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Carmine Infantino",
+          "type": "Person"
+        },
+        {
+          "text": "Tom Lyle",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_24",
+      "text": "Tom Lyle and Gardner Fox created the comic book character of Blockbuster who has the alternative name of Roland Desmond.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Gardner Fox",
+          "type": "Person"
+        },
+        {
+          "text": "Tom Lyle",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_25",
+      "text": "The comic character Blockbuster is also known as Roland Desmond and was created by Gardner Fox and Carmine Infantino.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Gardner Fox",
+          "type": "Person"
+        },
+        {
+          "text": "Carmine Infantino",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_26",
+      "text": "The comic character Blockbuster is also known as Mark Desmond and was created by Roger Stern and Gardner Fox.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Gardner Fox",
+          "type": "Person"
+        },
+        {
+          "text": "Roger Stern",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_27",
+      "text": "The comic character, Blockbuster's alternative name is Roland Desmond and was created by Gardner Fox and Roger Stern.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Gardner Fox",
+          "type": "Person"
+        },
+        {
+          "text": "Roger Stern",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_28",
+      "text": "The comic book character Blockbuster, aka Mark Desmond, was created by Gardner Fox and Tom Lyle.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Gardner Fox",
+          "type": "Person"
+        },
+        {
+          "text": "Tom Lyle",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_29",
+      "text": "\"Mark Desmond\", also known as Blockbuster, is a comic character created by Roger Stern and Carmine Infantino.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Roger Stern",
+          "type": "Person"
+        },
+        {
+          "text": "Carmine Infantino",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_30",
+      "text": "\"Mark Desmond\" is also known as the comic character Blockbuster who was created by Roger Stern and Tom Lyle.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Roger Stern",
+          "type": "Person"
+        },
+        {
+          "text": "Tom Lyle",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_31",
+      "text": "The comic character Dane Whitman Black Knight, created by Roy Thomas and John Buscema, is also known as simply Dane Whitman.",
+      "entities": [
+        {
+          "text": "Dane Whitman Black Knight",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "John Buscema",
+          "type": "Person"
+        },
+        {
+          "text": "Roy Thomas",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_32",
+      "text": "The comic character, Dane Whitman Black Knight was created by Roy Thomas and the American, John Buscema.",
+      "entities": [
+        {
+          "text": "Dane Whitman Black Knight",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "John Buscema",
+          "type": "Person"
+        },
+        {
+          "text": "Americans",
+          "type": "Country"
+        },
+        {
+          "text": "Roy Thomas",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_33",
+      "text": "American Sheldon Moldoff created the Black Pirate who is sometimes known as Jon Valor.",
+      "entities": [
+        {
+          "text": "Americans",
+          "type": "Country"
+        },
+        {
+          "text": "Sheldon Moldoff",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_34",
+      "text": "The American, Sheldon Moldoff, won the Inkpot Award for creating the Black Pirate.",
+      "entities": [
+        {
+          "text": "Americans",
+          "type": "Country"
+        },
+        {
+          "text": "Sheldon Moldoff",
+          "type": "Person"
+        },
+        {
+          "text": "Inkpot Award",
+          "type": "Award"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_35",
+      "text": "Steve Bright is the creator of Bananaman which was last broadcast on April 15th 1986 by the BBC.",
+      "entities": [
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_36",
+      "text": "The BBC (located in Broadcasting House in London) last aired creator Steve Bright's Bananaman, starring Bill Oddie, on April 15th, 1986.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_37",
+      "text": "BBC broadcast Bananaman, a show created by John Geering and starring Bill Oddie. Broadcasting House is a location owned by the BBC, the channel that broadcasts this show which first aired on 10/03/83.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "John Geering",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_38",
+      "text": "Bananaman had as one of its stars Bill Oddie and was last aired on the 15/04/1986 on the BBC who are based at their headquarters, Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_39",
+      "text": "The BBC broadcasted Bananaman, which was created by Steve Bright.",
+      "entities": [
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_40",
+      "text": "Tim Brooke-Taylor starred in the Steve Bright creation Bananaman which was broadcast by the BBC, based at Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_41",
+      "text": "Born in Rochdale, the actor Bill Oddie starred in the Broadcasting House based BBC children's show Bananaman. The show aired in 1983.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Rochdale",
+          "type": "Place"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_42",
+      "text": "Bananaman starring Bill Oddie is broadcast by the BBC, which is located in London.",
+      "entities": [
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "London",
+          "type": "City"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_43",
+      "text": "Bananaman last aired on April 15th 1986, on BBC.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_44",
+      "text": "Lancashire native Bill Oddie starred in Bananaman, a story created by Steve Bright filmed in London at Broadcasting House, the home of the BBC who also broadcast it.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Lancashire",
+          "type": "Place"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_45",
+      "text": "Steve Bright is the creator of Bananaman which was broadcast by the BBC and starred in by Bill Oddie.",
+      "entities": [
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_46",
+      "text": "Bananaman starring Bill Oddie and created by Steve Bright was broadcasted by BBC. BBC was founded by 1st Baron, John Reith and has its home at Broadcasting House.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "John Reith, 1st Baron Reith",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_47",
+      "text": "John Reith, 1st Baron Reith, founded BBC, which broadcasted Bananaman.",
+      "entities": [
+        {
+          "text": "John Reith, 1st Baron Reith",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_48",
+      "text": "The creator of Bananaman, first shown on 10/03/1983, was Steve Bright and it was broadcast by the BBC. The BBC is located in the Broadcasting House.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_49",
+      "text": "Bananaman, which first aired on 10/03/1983, had as its star Tim Brooke-Taylor.",
+      "entities": [
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_50",
+      "text": "One of the stars of Bananaman the TV series, was Tim Brooke-Taylor. Bananaman was shown on the BBC which has its headquarters at Broadcasting House.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_51",
+      "text": "The BBC, which is based at Broadcasting House in London, first broadcast Bananaman on 10/03/1983.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_52",
+      "text": "Bananaman, which was created by Steve Bright, is broadcast on BBC and starred Tim Brooke-Taylor.",
+      "entities": [
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Tim Brooke-Taylor",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_53",
+      "text": "Bananaman is created by Steve Bright and it stars Bill Oddie. The BBC, located at the Broadcasting House in London, broadcasts Bananaman.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_54",
+      "text": "Bananaman was first aired on 10/03/1983, and its creator was Steve Bright.",
+      "entities": [
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_55",
+      "text": "The BBC tv series, Bananaman, created by Steve Bright and starred Bill Oddie, who was born in Rochdale. The BBC Headquarters is referred to as Broadcasting House.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "Rochdale",
+          "type": "Place"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_56",
+      "text": "The location of the BBC is the Broadcasting House in London. Bananaman, broadcast by the BBC, first aired April 15th, 1986, and last aired October 3rd, 1983.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_57",
+      "text": "Bill Oddie stars in Bananaman, which was created by John Geering and last aired on April 15th 1986. It was broadcast by the BBC, located at the Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "John Geering",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_58",
+      "text": "Steve Bright crested Bananaman which was starred in by Graeme Garden. Bananaman was broadcast on the BBC which is based at Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "Graeme Garden",
+          "type": "Person"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_59",
+      "text": "Bananaman, the TV series first aired on the 3rd of October, 1983, was shown on the BBC.",
+      "entities": [
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_60",
+      "text": "Bill Oddie stars in a BBC programme called Bananaman. the BBC are based at Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_61",
+      "text": "The location of the BBC is the Broadcasting house, which is located in London. The show, Bananaman, was broadcasted by the BBC, and stars Bill Oddie. Bananaman first aired on October 3, 1983 and last aired on April 15,1986.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_62",
+      "text": "Steve Bright created Bananaman which was broadcast by the BBC who are based at Broadcasting House London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_63",
+      "text": "Bananaman was a BBC TV series which was created by Steve Bright and was last aired in 15/04/1983. The broadcaster who broadcast the show is based at Broadcasting House in London.",
+      "entities": [
+        {
+          "text": "Broadcasting House",
+          "type": "City"
+        },
+        {
+          "text": "Steve Bright",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_64",
+      "text": "Tony Hall, Baron Hall of Birkenhead, is a key person at the BBC which is located in London and broadcast Bananaman.",
+      "entities": [
+        {
+          "text": "Tony Hall, Baron Hall of Birkenhead",
+          "type": "Person"
+        },
+        {
+          "text": "BBC",
+          "type": "Organisation"
+        },
+        {
+          "text": "London",
+          "type": "City"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_65",
+      "text": "Bill Oddie starred in Bananaman which first aired on 3 October 1983 and was broadcast by STV.",
+      "entities": [
+        {
+          "text": "Bill Oddie",
+          "type": "Person"
+        },
+        {
+          "text": "STV",
+          "type": "Organisation"
+        }
+      ]
+    },
+    {
+      "id": "ont_10_comicscharacter_train_66",
+      "text": "The comic character Blockbuster, also known as Roland Desmond, was created by Roger Stern and Tom Lyle.",
+      "entities": [
+        {
+          "text": "Blockbuster",
+          "type": "ComicsCharacter"
+        },
+        {
+          "text": "Roger Stern",
+          "type": "Person"
+        },
+        {
+          "text": "Tom Lyle",
+          "type": "Person"
+        }
+      ]
+    }
+  ]
+}

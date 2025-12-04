@@ -1,0 +1,245 @@
+{
+  "entities": [
+    {
+      "id": "ComicsCharacter",
+      "label": "ComicsCharacter",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "name": "firstAppearanceInFilm",
+          "type": "DATE"
+        },
+        {
+          "name": "fullName",
+          "type": "STRING"
+        },
+        {
+          "name": "alternativeName",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Voice",
+      "label": "Voice",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Country",
+      "label": "Country",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "City",
+      "label": "City",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Place",
+      "label": "Place",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Film",
+      "label": "Film",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "name": "firstAired",
+          "type": "DATE"
+        },
+        {
+          "name": "lastAired",
+          "type": "DATE"
+        }
+      ]
+    },
+    {
+      "id": "Organisation",
+      "label": "Organisation",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Award",
+      "label": "Award",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Person",
+      "label": "Person",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "id": "Series",
+      "label": "Series",
+      "properties": [
+        {
+          "name": "name",
+          "type": "STRING"
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "voice",
+      "label": "HAS_VOICE"
+    },
+    {
+      "id": "city",
+      "label": "IS_LOCATED_IN_CITY"
+    },
+    {
+      "id": "nationality",
+      "label": "FROM_COUNTRY"
+    },
+    {
+      "id": "distributor",
+      "label": "HAS_DISTRIBUTOR"
+    },
+    {
+      "id": "award",
+      "label": "HAS_AWARD"
+    },
+    {
+      "id": "keyPerson",
+      "label": "HAS_KEY_PERSON"
+    },
+    {
+      "id": "foundedBy",
+      "label": "IS_FOUNDED_BY"
+    },
+    {
+      "id": "creator",
+      "label": "HAS_CREATOR"
+    },
+    {
+      "id": "starring",
+      "label": "HAS_STARRING"
+    },
+    {
+      "id": "series",
+      "label": "HAS_SERIES"
+    },
+    {
+      "id": "child",
+      "label": "HAS_CHILD"
+    },
+    {
+      "id": "birthPlace",
+      "label": "HAS_BIRTH_PLACE"
+    },
+    {
+      "id": "broadcastedBy",
+      "label": "IS_BROADCASTED_BY"
+    }
+  ],
+  "potential_schema": [
+    [
+      "ComicsCharacter",
+      "voice",
+      "Voice"
+    ],
+    [
+      "Organisation",
+      "city",
+      "City"
+    ],
+    [
+      "Person",
+      "nationality",
+      "Country"
+    ],
+    [
+      "Film",
+      "distributor",
+      "Organisation"
+    ],
+    [
+      "Person",
+      "award",
+      "Award"
+    ],
+    [
+      "Organisation",
+      "keyPerson",
+      "Person"
+    ],
+    [
+      "Organisation",
+      "foundedBy",
+      "Person"
+    ],
+    [
+      "ComicsCharacter",
+      "creator",
+      "Person"
+    ],
+    [
+      "Film",
+      "starring",
+      "Person"
+    ],
+    [
+      "Film",
+      "series",
+      "Series"
+    ],
+    [
+      "Person",
+      "child",
+      "Person"
+    ],
+    [
+      "Person",
+      "birthPlace",
+      "Place"
+    ],
+    [
+      "ComicsCharacter",
+      "broadcastedBy",
+      "Organisation"
+    ]
+  ]
+}

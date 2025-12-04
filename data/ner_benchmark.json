@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "name": "NER Benchmark Dataset",
+    "description": "A dataset for evaluating Named Entity Recognition models",
+    "version": "1.0",
+    "entity_types": ["Person", "Company", "Location", "Product"]
+  },
+  "samples": [
+    {
+      "id": "sample_001",
+      "text": "John Doe is a software engineer at Google. He lives in San Francisco.",
+      "entities": [
+        {
+          "text": "John Doe",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 8
+        },
+        {
+          "text": "Google",
+          "type": "Company",
+          "start_char": 35,
+          "end_char": 41
+        },
+        {
+          "text": "San Francisco",
+          "type": "Location",
+          "start_char": 56,
+          "end_char": 69
+        }
+      ]
+    },
+    {
+      "id": "sample_002",
+      "text": "Elon Musk founded SpaceX in 2002 and later became CEO of Tesla. He was born in Pretoria, South Africa.",
+      "entities": [
+        {
+          "text": "Elon Musk",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 9
+        },
+        {
+          "text": "SpaceX",
+          "type": "Company",
+          "start_char": 18,
+          "end_char": 24
+        },
+        {
+          "text": "Tesla",
+          "type": "Company",
+          "start_char": 57,
+          "end_char": 62
+        },
+        {
+          "text": "Pretoria",
+          "type": "Location",
+          "start_char": 79,
+          "end_char": 87
+        },
+        {
+          "text": "South Africa",
+          "type": "Location",
+          "start_char": 89,
+          "end_char": 101
+        }
+      ]
+    },
+    {
+      "id": "sample_003",
+      "text": "Apple released the iPhone 15 Pro in September 2023. Tim Cook announced the new product at the Apple Park headquarters in Cupertino.",
+      "entities": [
+        {
+          "text": "Apple",
+          "type": "Company",
+          "start_char": 0,
+          "end_char": 5
+        },
+        {
+          "text": "iPhone 15 Pro",
+          "type": "Product",
+          "start_char": 19,
+          "end_char": 32
+        },
+        {
+          "text": "Tim Cook",
+          "type": "Person",
+          "start_char": 51,
+          "end_char": 59
+        },
+        {
+          "text": "Apple Park",
+          "type": "Location",
+          "start_char": 94,
+          "end_char": 104
+        },
+        {
+          "text": "Cupertino",
+          "type": "Location",
+          "start_char": 121,
+          "end_char": 130
+        }
+      ]
+    },
+    {
+      "id": "sample_004",
+      "text": "Satya Nadella has been the CEO of Microsoft since 2014. The company is headquartered in Redmond, Washington.",
+      "entities": [
+        {
+          "text": "Satya Nadella",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 13
+        },
+        {
+          "text": "Microsoft",
+          "type": "Company",
+          "start_char": 34,
+          "end_char": 43
+        },
+        {
+          "text": "Redmond",
+          "type": "Location",
+          "start_char": 88,
+          "end_char": 95
+        },
+        {
+          "text": "Washington",
+          "type": "Location",
+          "start_char": 97,
+          "end_char": 107
+        }
+      ]
+    },
+    {
+      "id": "sample_005",
+      "text": "Amazon Web Services was launched by Jeff Bezos in 2006. AWS now operates data centers across multiple locations including Virginia and Oregon.",
+      "entities": [
+        {
+          "text": "Amazon Web Services",
+          "type": "Company",
+          "start_char": 0,
+          "end_char": 19
+        },
+        {
+          "text": "Jeff Bezos",
+          "type": "Person",
+          "start_char": 36,
+          "end_char": 46
+        },
+        {
+          "text": "AWS",
+          "type": "Company",
+          "start_char": 56,
+          "end_char": 59
+        },
+        {
+          "text": "Virginia",
+          "type": "Location",
+          "start_char": 119,
+          "end_char": 127
+        },
+        {
+          "text": "Oregon",
+          "type": "Location",
+          "start_char": 132,
+          "end_char": 138
+        }
+      ]
+    },
+    {
+      "id": "sample_006",
+      "text": "Mark Zuckerberg rebranded Facebook to Meta in 2021. The company unveiled the Quest Pro VR headset at their campus in Menlo Park.",
+      "entities": [
+        {
+          "text": "Mark Zuckerberg",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 15
+        },
+        {
+          "text": "Facebook",
+          "type": "Company",
+          "start_char": 26,
+          "end_char": 34
+        },
+        {
+          "text": "Meta",
+          "type": "Company",
+          "start_char": 38,
+          "end_char": 42
+        },
+        {
+          "text": "Quest Pro",
+          "type": "Product",
+          "start_char": 76,
+          "end_char": 85
+        },
+        {
+          "text": "Menlo Park",
+          "type": "Location",
+          "start_char": 117,
+          "end_char": 127
+        }
+      ]
+    },
+    {
+      "id": "sample_007",
+      "text": "Jensen Huang is the CEO of NVIDIA, which is based in Santa Clara. The company's GeForce RTX 4090 is one of the most powerful consumer GPUs.",
+      "entities": [
+        {
+          "text": "Jensen Huang",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 12
+        },
+        {
+          "text": "NVIDIA",
+          "type": "Company",
+          "start_char": 27,
+          "end_char": 33
+        },
+        {
+          "text": "Santa Clara",
+          "type": "Location",
+          "start_char": 53,
+          "end_char": 64
+        },
+        {
+          "text": "GeForce RTX 4090",
+          "type": "Product",
+          "start_char": 80,
+          "end_char": 96
+        }
+      ]
+    },
+    {
+      "id": "sample_008",
+      "text": "Sundar Pichai oversees both Google and Alphabet. The company developed the Pixel 8 smartphone and operates offices in Mountain View, California.",
+      "entities": [
+        {
+          "text": "Sundar Pichai",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 13
+        },
+        {
+          "text": "Google",
+          "type": "Company",
+          "start_char": 28,
+          "end_char": 34
+        },
+        {
+          "text": "Alphabet",
+          "type": "Company",
+          "start_char": 39,
+          "end_char": 47
+        },
+        {
+          "text": "Pixel 8",
+          "type": "Product",
+          "start_char": 75,
+          "end_char": 82
+        },
+        {
+          "text": "Mountain View",
+          "type": "Location",
+          "start_char": 119,
+          "end_char": 132
+        },
+        {
+          "text": "California",
+          "type": "Location",
+          "start_char": 134,
+          "end_char": 144
+        }
+      ]
+    },
+    {
+      "id": "sample_009",
+      "text": "Sam Altman leads OpenAI, the company behind ChatGPT. Their offices are located in San Francisco's Mission District.",
+      "entities": [
+        {
+          "text": "Sam Altman",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 10
+        },
+        {
+          "text": "OpenAI",
+          "type": "Company",
+          "start_char": 17,
+          "end_char": 23
+        },
+        {
+          "text": "ChatGPT",
+          "type": "Product",
+          "start_char": 44,
+          "end_char": 51
+        },
+        {
+          "text": "San Francisco",
+          "type": "Location",
+          "start_char": 82,
+          "end_char": 95
+        },
+        {
+          "text": "Mission District",
+          "type": "Location",
+          "start_char": 98,
+          "end_char": 114
+        }
+      ]
+    },
+    {
+      "id": "sample_010",
+      "text": "Dara Khosrowshahi is the CEO of Uber Technologies. The ride-sharing company was founded in San Francisco and now operates globally.",
+      "entities": [
+        {
+          "text": "Dara Khosrowshahi",
+          "type": "Person",
+          "start_char": 0,
+          "end_char": 17
+        },
+        {
+          "text": "Uber Technologies",
+          "type": "Company",
+          "start_char": 32,
+          "end_char": 49
+        },
+        {
+          "text": "San Francisco",
+          "type": "Location",
+          "start_char": 91,
+          "end_char": 104
+        }
+      ]
+    }
+  ]
+}
+
