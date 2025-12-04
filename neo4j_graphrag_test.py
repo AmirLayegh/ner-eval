@@ -39,6 +39,16 @@ schema = GraphSchema(
             ],
         ),
     ),
+    # relationship_types=(
+    #     RelationshipType(label="WORKS_AT", description="Person works at a company"),
+    #     RelationshipType(label="LIVES_IN", description="Person lives in a location"),
+    #     RelationshipType(label="LOCATED_IN", description="Company is located in a location"),
+    # ),
+    # patterns=(
+    #     ("Person", "WORKS_AT", "Company"),
+    #     ("Person", "LIVES_IN", "Location"),
+    #     ("Company", "LOCATED_IN", "Location"),
+    # ),
 )
 
 # Initialize the LLM
@@ -66,8 +76,7 @@ async def run_extraction():
     # Pass the schema to the run() method
     result = await extractor.run(
         chunks=chunks,
-        schema=schema,
-        examples="",  # Optional: add few-shot examples here
+        schema=schema
     )
     end_time = time.time()
     
