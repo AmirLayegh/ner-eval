@@ -1,0 +1,13 @@
+[project]
+name = "ner-bench"
+version = "0.1.0"
+description = "project to compare different NER models"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "neo4j-graphrag",
+    "langchain",
+    "gliner2",
+    "dotenv>=0.9.9",
+    "openai>=2.8.1",
+]
