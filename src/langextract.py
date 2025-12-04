@@ -10,7 +10,6 @@ import json
 import dotenv
 dotenv.load_dotenv()
 
-
 class LangExtractor:
     def __init__(self, model_id: str="gpt-4o", file_path: str="data/science_ner_benchmark.json"):
         self.model_id = model_id
@@ -95,14 +94,14 @@ class LangExtractor:
         self.set_examples()
         results = []
         total_time = 0
-        for sample in self.samples[:10]:
+        for sample in self.samples:
             text = sample['text']
             start_time = time.time()
             entities = self.extract(text)
             end_time = time.time()
             total_time += end_time - start_time
             results.append(entities)
-        return results, total_time/len(self.samples[:10])
+        return results, total_time/len(self.samples)
 
    
 #             lx.data.Extraction(

@@ -1,0 +1,1710 @@
+{
+  "metadata": {
+    "name": "Scientist Relation Extraction Benchmark",
+    "description": "Entity-to-entity relation extraction dataset filtered from ont_18_scientist_train",
+    "relation_types": [
+      "almaMater",
+      "award",
+      "birthPlace",
+      "capital",
+      "citizenship",
+      "country",
+      "currency",
+      "deathPlace",
+      "demonym",
+      "governmentType",
+      "isPartOf",
+      "knownFor",
+      "language",
+      "leader",
+      "nationality",
+      "officialLanguage",
+      "professionalField",
+      "religion",
+      "residence",
+      "timeZone"
+    ],
+    "total_samples": 98,
+    "total_triples": 218
+  },
+  "samples": [
+    {
+      "id": "ont_18_scientist_train_2",
+      "text": "Saint Petersburg was founded on May 27, 1703 and has a total area of 1439.0, Olga Bondareva passed away at Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_3",
+      "text": "Olga Nikolaevna Bondareva, (born April 27, 1937) died in Saint Petersburg. She was best known for the \"Bondareva-Shapley theorem.\"",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_4",
+      "text": "Olga Bondareva's professional field is Economics.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_5",
+      "text": "In terms of nationality, Nurhan Atasoy is a Turkish person.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_6",
+      "text": "Olga Bondareva, born \"Olga Nikolaevna Bondareva\" and a student of Leningrad State University, was known for the Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_7",
+      "text": "Olga Bondareva (born Olga Nikolaevna Bondareva, on April 27, 1937, in Leningrad, USSR) graduated from Leningrad State University and is known for Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_8",
+      "text": "Turk is the demonym for residents of Turkey.",
+      "triples": [
+        {
+          "subject": "Turkey",
+          "relation": "demonym",
+          "object": "Turk"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_9",
+      "text": "Olga Bondareva, who lived from April 27th, 1937 to December 9th, 1991, was a student at Leningrad State University.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_10",
+      "text": "Saint Petersburg has the area of 1439.0 sq/km where Olga Bondareva died.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_11",
+      "text": "Olga Bondareva was born on April 27, 1937 in Leningrad, USSR.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_12",
+      "text": "Olga Bondareva, born in Leningrad, USSR, later died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_13",
+      "text": "Pranab Mukherjee was a leader of India.",
+      "triples": [
+        {
+          "subject": "India",
+          "relation": "leader",
+          "object": "Pranab Mukherjee"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_14",
+      "text": "Nurhan Atasoy resides in the unitary state of Turkey, specifically in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "governmentType",
+          "object": "Unitary state"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_15",
+      "text": "In Turkey where Nurhan Atasoy was born the leader is called the Prime Minister.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_16",
+      "text": "Nurhan Atasoy won State Award for Superior Achievement.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_17",
+      "text": "Nurhan Atasoy who was born in Reşadiye , has his residence in Istanbul. Istanbul metro area is 5,343 square kilometers and its time zone is Eastern European Summer Time.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Summer Time"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_18",
+      "text": "Nurhan Atasoy was born in Turkey. Binali Yıldırım was former Prime Minister of Turkey under current president Recep Tayyip Erdoğan.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "leader",
+          "object": "Recep Tayyip Erdoğan"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "leader",
+          "object": "Binali Yıldırım"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_19",
+      "text": "Olga Bondareva's alma matter was Leningrad State University, however she died not in Leningrad, but rather in the city of Saint Petersburg. Saint Petersburg was founded May 27, 1703.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_20",
+      "text": "Olga Bondareva was born in Leningrad, USSR and died in Saint Petersburg. Saint Petersburg was founded on May 27, 1703 and is led by a governor.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_21",
+      "text": "Nurhan Atasoy's, born on January 1, 1934, is a Turkish citizen living in Istanbul, Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_23",
+      "text": "Olga Bondareva studied at Leningrad State University, where she was known for the Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_24",
+      "text": "Nurhan Atasoy was born in Turkey on January 1st, 1934. He is a Turkish citizen and resides in Istanbul, Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_25",
+      "text": "Nurhan Atasoy is a resident of Istanbul, Turkey. Istanbul is in the Eastern European Summer Time zone.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Time"
+        },
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Summer Time"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_27",
+      "text": "Nurhan Atasoy was born in Resadiye, a town located in the Tokat Province in Turkey. Turkey has a total area of 783,356.0 km^2.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Reşadiye",
+          "relation": "isPartOf",
+          "object": "Tokat Province"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_28",
+      "text": "Olga Bondareva's professional field is mathematics.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_29",
+      "text": "Nurhan Atasoy was born in Turkey and at one time lived in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_30",
+      "text": "Olga Bondareva, who was born on April 27, 1937, graduated from Leningrad State University.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_31",
+      "text": "Nurhan Atasoy was born in Istanbul on January 1, 1934. He is a Turkish citizen who resides in Istanbul which falls in the Eastern European Summer Time time zone.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Summer Time"
+        },
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Time"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_32",
+      "text": "Nurhan Atasoy was born in Turkey, where he has his nationality.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_33",
+      "text": "Olga Bondareva (born \"Olga Nikolaevna Bondareva\" in Leningrad, USSR) worked in the professional fields of economics and mathematics and died December 9, 1991.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_35",
+      "text": "Olga Bondareva (born in Leningrad, USSR and passed away December 9, 1991) attended Leningrad State University, and was known for the Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_36",
+      "text": "Born in Leningrad, a city in the USSR, Olga Bondareva studied to become an economist at Leningrad State University, and is one of the known professionals in the field of Mathematics.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_37",
+      "text": "Turkish citizen Nurhan Atasoy, resident of Istanbul, won the State Award for Superior Achievement.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_38",
+      "text": "The religion of some Turkish people could be defined as irreligion.",
+      "triples": [
+        {
+          "subject": "Turkish people",
+          "relation": "religion",
+          "object": "Irreligion"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_39",
+      "text": "Nurhan Atasoy is a Turkish citizen.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_40",
+      "text": "Ankara is the capital of Turkey, whose official language is Turkish. Nurhan Atasoy is a citizen of turnkey who was born January 1, 1934. He has also won the State Award for Superior Achievement.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "capital",
+          "object": "Ankara"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "officialLanguage",
+          "object": "Turkish language"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_43",
+      "text": "Nurhan Atasoy a Turk (demonym for residents of Turkey) is residing in Istanbul which is located in the +2 UTC timezone.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "demonym",
+          "object": "Turk"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_45",
+      "text": "Olga Bondareva who was born on April 27, 1937 in Leningrad, USSR, died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_46",
+      "text": "Tokat is located in Turkey.",
+      "triples": [
+        {
+          "subject": "Tokat",
+          "relation": "country",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_47",
+      "text": "Olga Bondareva was born in Leningrad, USSR.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_48",
+      "text": "Nurhan Atasoy was born in Resadiye in Turkey. The official language of Turkey is Turkish and the currency is the Turkish lira.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "currency",
+          "object": "Turkish lira"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "officialLanguage",
+          "object": "Turkish language"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_49",
+      "text": "Olga Bondareva, born in Leningrad of the USSR, is an economist and mathematician who died in Saint Petersburg on December 9, 1991.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_50",
+      "text": "Olga Bondareva was born on April 27, 1937 and graduated from Leningrad State University. She is currently working in the economic field.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_51",
+      "text": "Nurhan Atasoy was born and currently resides in Turkey, a unitary state whose area is comprised by 1.3 percent water, where he currently resides in the city of Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "governmentType",
+          "object": "Unitary state"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_52",
+      "text": "Olga Bondareva who was born in Leningrad, USSR on April 27, 1937 is known for Bondareva-Shapley theorem. She died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_53",
+      "text": "Nurhan Atasoy is a Turkish national (full name \"Republic of Turkey\") with Turkish citizenship. The primary language spoken in Turkey is Turkish.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "language",
+          "object": "Turkish language"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_54",
+      "text": "Reşadiye is part of the Tokat Province.",
+      "triples": [
+        {
+          "subject": "Reşadiye",
+          "relation": "isPartOf",
+          "object": "Tokat Province"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_55",
+      "text": "Olga Bondareva is known for Bondareva-Shapley theorem. She was born on April, 1937 and her birth name was Olga Nikolaevna Bondareva.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_56",
+      "text": "Saint Petersburg, where Olga Bondareva died, was founded on May 27, 1703.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_57",
+      "text": "Olga Bondareva graduated from Leningrad State University and currently works in the field of Economics. She is most widely known for Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_58",
+      "text": "Olga Bondareva, known for Bondareva-Shapley theorem, was born on April 27, 1937.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_59",
+      "text": "Leningrad State University is the alma mater of Olga Bondareva. Olga Bondareva died in Saint Petersburg. St Petersburg is a city in Russia and Georgy Poltavchenko is the current leader there.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Saint Petersburg",
+          "relation": "country",
+          "object": "Russia"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Saint Petersburg",
+          "relation": "leader",
+          "object": "Georgy Poltavchenko"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_60",
+      "text": "Olga Bondareva is known for Bondareva-Shapley theorem, and was given the birth name ''Olga Nikolaevna Bondareva''.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_62",
+      "text": "Nurhan Atasoy was born on January 1st 1934 in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_63",
+      "text": "Nurhan Atasoy was born in Reşadiye.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_64",
+      "text": "Nurhan Atasoy (born January 1, 1934) was a Turkish citizen and national who had a residence in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_65",
+      "text": "Nurhan Atasoy resides in Istanbul in Turkey. Leaders like Recep Tayyip Erdoğan and Binali Yıldırım are from Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "leader",
+          "object": "Recep Tayyip Erdoğan"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "leader",
+          "object": "Binali Yıldırım"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_66",
+      "text": "Olga Bondareva currently works in the Field of Economics and also works in the field of Mathematics.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_67",
+      "text": "Nurhan Atasoy a Turkish national, residing in Tesvikiye, Turkey was born on January 1, 1934 in Turkey. He won the State Award for Superior Achievement.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Teşvikiye"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_68",
+      "text": "Olga Bondareva-born as Olga Nikolaevna Bondareva-was a student at Leningrad State University. She was known for the Bondareva-Shapley theorem and later died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_69",
+      "text": "Olga Bondareva was a student at Leningrad State University.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_70",
+      "text": "Olga Bondareva, also known as Olga Nikolaevna Bondareva, was born on April 27, 1937 and died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_71",
+      "text": "Olga Bondareva, whose professional field was Economics and Mathematics, died on December 9, 1991.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_72",
+      "text": "Olga Nikolaevna Bondareva, was born on April 27 1937 and died in St Petersburg on December 9 1991. A student of Leningrad State University, she was known for the Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_73",
+      "text": "The leader of Saint Petersburg is Georgy Poltavchenko.",
+      "triples": [
+        {
+          "subject": "Saint Petersburg",
+          "relation": "leader",
+          "object": "Georgy Poltavchenko"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_75",
+      "text": "Olga Bondareva, born on April 27, 1937, works in the fields of Mathematics and Economics.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Mathematics"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_76",
+      "text": "Nurhan Atasoy, a Turkish national, resides in Istanbul, Turkey. With Ankara as its capital, many people’s religion is defined as irreligion in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "capital",
+          "object": "Ankara"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Turkish people",
+          "relation": "religion",
+          "object": "Irreligion"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_77",
+      "text": "Nurhan Atasoy, recipient of the State Award for Superior Achievement, was born in Reşadiye, and resides in Tesvikiye.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Teşvikiye"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_78",
+      "text": "Nurhan Atasoy (born in Resadiye, Turkey) is of Turkish nationality. Turkey has an area of 783,356 square kilometers.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Reşadiye",
+          "relation": "country",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_80",
+      "text": "Nurhan Atasoy (born on January 1, 1934) is a Turkish citizen who resides in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_81",
+      "text": "Nurhan Atasoy lives in Istanbul where one of the leaders is titled Mayor.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_82",
+      "text": "Nurhan Atasoy, a Turkish national residing in Istanbul was born on 1934-01-01 in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_83",
+      "text": "Nurhan Atasoy, born in Resadiye, has been awarded the State Award for Superior Achievement.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_84",
+      "text": "Olga Bondareva was born on April 27th, 1937, in Leningrad, which was then part of the USSR. Her given name at birth was \"Olga Nikolaevna Bondareva\".",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_85",
+      "text": "Olga Bondareva who was known for the Bondareva-Shapley theorem was born on April 27, 1937 and died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_86",
+      "text": "Reşadiye is in the country of Turkey.",
+      "triples": [
+        {
+          "subject": "Reşadiye",
+          "relation": "country",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_87",
+      "text": "The time zone of Istanbul is Eastern European time.",
+      "triples": [
+        {
+          "subject": "Istanbul",
+          "relation": "timeZone",
+          "object": "Eastern European Time"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_88",
+      "text": "Nurhan Atasoy, who was born on January 01, 1934 in Turkey, currently also resides there (Istanbul) and has both Turkish nationality and citizenship.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_89",
+      "text": "Nurhan Atasoy was born in Turkey, a country that has an area total of 783,356.0 km^2.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_90",
+      "text": "Olga Bondareva, born on April 27, 1937 in Soviet Leningrad, died in Saint Petersburg. The city was founded on May 27, 1703.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "birthPlace",
+          "object": "Leningrad, USSR"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_91",
+      "text": "Founded on My 27th 1703, St Petersburg is led by a Governor. Olga Bondareva was a famous resident. Bondareva died in St Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_92",
+      "text": "Economist Olga Bondareva with full name Olga Nikolaevna Bondareva graduated from Leningrad State University. She died in Saint Petersburg on the 9th of December, 1991.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "professionalField",
+          "object": "Economics"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_93",
+      "text": "Tesvikiye was the primary residence of Nurhan Atasoy.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Teşvikiye"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_94",
+      "text": "Nurhan Atasoy (born January 1, 1934) resides in Istanbul. They are of Turkish nationality.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_95",
+      "text": "Nurhan Atasoy, born of Turkish stock in Turkey on the date 1934-01-01, is a Turkish citizen with a residence in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_97",
+      "text": "Olga Bondareva is known for Bondareva-Shapley theorem.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_98",
+      "text": "Nurhan Atasoy is a Turkish national. In Turkey the primary language spoken is Turkish.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "language",
+          "object": "Turkish language"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_99",
+      "text": "Nurhan Atasoy is of Turkish nationality and a citizen of Turkey born on January 1, 1934 in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "citizenship",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_100",
+      "text": "Nurhan Atasoy, born January 1st, 1934, was of Turkish nationality.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_101",
+      "text": "Turkey, the birthplace of Nurhan Atasoy, has a unitary government.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "governmentType",
+          "object": "Unitary state"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_102",
+      "text": "Olga Bondareva, born as Olga Nikolaevna Bondareva, was born on April 27th, 1937. She graduated from Leningrad State University, earning fame for the Bondareva-Shapley theorem. Olga died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "knownFor",
+          "object": "Bondareva–Shapley theorem"
+        },
+        {
+          "subject": "Olga Bondareva",
+          "relation": "almaMater",
+          "object": "Leningrad State University"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_103",
+      "text": "Nurhan Atasoy, whose nationality is Turkish, was born in Turkey. He resides in Turkey in Istanbul.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "nationality",
+          "object": "Turkish people"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_104",
+      "text": "Nurhan Atasoy resides in Istanbul in Turkey where the primary language is Turkish.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Turkey",
+          "relation": "language",
+          "object": "Turkish language"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_105",
+      "text": "Olga Bondareva died in Saint Petersburg.",
+      "triples": [
+        {
+          "subject": "Olga Bondareva",
+          "relation": "deathPlace",
+          "object": "Saint Petersburg"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_106",
+      "text": "Nurhan Atasoy resides in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_107",
+      "text": "The Turkish language is the official language of Turkey.",
+      "triples": [
+        {
+          "subject": "Turkey",
+          "relation": "officialLanguage",
+          "object": "Turkish language"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_109",
+      "text": "Nurhan Atasoy (born in Resadiye), who was awarded the State Award for Superior Achievement, previously resided in Istanbul (population: 2691 people per square kilometer) and currently lives in Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Reşadiye"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Istanbul"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "award",
+          "object": "State Award for Superior Achievement"
+        },
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "residence",
+          "object": "Turkey"
+        }
+      ]
+    },
+    {
+      "id": "ont_18_scientist_train_110",
+      "text": "Nurhan Atasoy's birthplace is Turkey.",
+      "triples": [
+        {
+          "subject": "Nurhan Atasoy",
+          "relation": "birthPlace",
+          "object": "Turkey"
+        }
+      ]
+    }
+  ]
+}
