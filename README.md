@@ -33,3 +33,8 @@ uv run python eval_re.py
 ## Metrics
 - Precision, Recall, F1 (micro-averaged)
 - Average inference time per sample
+
+## Metric Explanation
+Precision = TP / (TP + FP)    # How many extracted triples are correct?
+Recall    = TP / (TP + FN)    # How many ground truth triples were found?
+F1        = 2 * P * R / (P + R)
