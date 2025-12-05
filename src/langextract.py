@@ -26,8 +26,8 @@ class LangExtractor:
             self.samples = data['samples']
             self.entity_types = data['metadata']['entity_types']
     def set_prompt(self):
-        self.prompt = textwrap.dedent("""
-        Extract the entities with the types of the following: {self.entity_types}.
+        self.prompt = textwrap.dedent(f"""
+        Extract the entities with the types of the following: {", ".join(self.entity_types)}.
         Use exact text for extraction. Do not paraphrase or overlap entities.
         """)
 
@@ -86,7 +86,7 @@ class LangExtractor:
         ]
 
     def extract(self, text):
-        return lx.extract(text, self.prompt, examples=self.examples, model_id=self.model_id)
+        return lx.extract(text, self.prompt, examples=self.examples, model_id=self.model_id, fence_output=True)
     
     def run(self):
         self.set_data()
@@ -102,34 +102,3 @@ class LangExtractor:
             total_time += end_time - start_time
             results.append(entities)
         return results, total_time/len(self.samples)
-
-   
-#             lx.data.Extraction(
-#                 extraction_class="company",
-#                 extraction_text="Neo4j",
-#                 attributes={
-#                     "relationship_with": "Emil Eifrem",
-#                     "relationship_type": "FOUNDED_BY",
-#                 }
-#             ),
-#             lx.data.Extraction(
-#                 extraction_class="location",
-#                 extraction_text="San Francisco",
-#             ),
-#             lx.data.Extraction(
-#                 extraction_class="location",
-#                 extraction_text="San Francisco",
-#             ),
-#         ]
-#     ),
-# ]
-
-
-
-# text = "John Doe is a software engineer at Google. He lives in San Francisco."
-
-# start_time = time.time()
-# result = lx.extract(text, prompt, examples=examples, model_id="gemini-2.5-pro")
-# end_time = time.time()
-# print(result)
-# print(f"Time taken: {end_time - start_time} seconds")

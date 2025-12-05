@@ -42,40 +42,6 @@ class GliNER2Extractor:
 class GliNER2RE:
     def __init__(self, model_id: str="fastino/gliner2-base-v1", file_path: str="data/re/scientist_re_benchmark.json"):
         self.model_id = model_id
-        self.relation_types = None
-        self.file_path = file_path
-        self.extractor = None
-        self.data = None
-        self.samples = None
-        self.extractor = GLiNER2.from_pretrained(self.model_id)
-    
-    def set_data(self):
-        with open(self.file_path, 'r') as f:
-            data = json.load(f)
-            self.data = data
-            self.samples = data['samples']
-            self.relation_types = data['metadata']['relation_types']
-        
-    def extract(self, text):
-        result = self.extractor.extract_relations(text, self.relation_types)
-        return result['relation_extraction']
-    
-    def run(self):
-        self.set_data()
-        results = []
-        total_time = 0
-        for sample in self.samples[:10]:
-            text = sample['text']
-            start_time = time.time()
-            result = self.extract(text)
-            end_time = time.time()
-            total_time += end_time - start_time
-            results.append(result)
-        return results, total_time/len(self.samples[:10])
-
-class GliNER2RE:
-    def __init__(self, model_id: str="fastino/gliner2-base-v1", file_path: str="data/re/scientist_re_benchmark.json"):
-        self.model_id = model_id
         self.file_path = file_path
         self.extractor = None
         self.data = None

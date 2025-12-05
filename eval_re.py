@@ -115,7 +115,7 @@ def main():
     print(row2)
 
     # Save summary to a file
-    with open("re_eval_summary.txt", "w") as summary_file:
+    with open("result/re_eval_summary.txt", "w") as summary_file:
         summary_file.write("=" * 60 + "\n")
         summary_file.write("SUMMARY - Relation Extraction\n")
         summary_file.write("=" * 60 + "\n")

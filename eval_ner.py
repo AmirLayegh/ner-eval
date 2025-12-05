@@ -129,7 +129,7 @@ def main():
     print(row3)
 
     # Save summary to a file
-    with open("ner_eval_summary.txt", "w") as summary_file:
+    with open("result/ner_eval_summary.txt", "w") as summary_file:
         summary_file.write("=" * 50 + "\n")
         summary_file.write("SUMMARY\n")
         summary_file.write("=" * 50 + "\n")
