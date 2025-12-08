@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: ner-bench
+Version: 0.1.0
+Summary: project to compare different NER models
+Requires-Python: <3.14,>=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: neo4j-graphrag
+Requires-Dist: langchain
+Requires-Dist: gliner2
+Requires-Dist: dotenv>=0.9.9
+Requires-Dist: openai>=2.8.1
+Requires-Dist: langextract>=1.1.1
+Requires-Dist: neo4j-experiment-tracker@ git+https//github.com/neo-technology/genai-cloud/tree/main/experiment_tracker
+Requires-Dist: experiment-tracker-neo4j
+
 # NER Evaluation with Experiment Tracking
 
 This example shows how to use `neo4j_experiment_tracker` for tracking your NER evaluation experiments.

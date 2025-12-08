@@ -1,0 +1,8 @@
+neo4j-graphrag
+langchain
+gliner2
+dotenv>=0.9.9
+openai>=2.8.1
+langextract>=1.1.1
+neo4j-experiment-tracker@ git+https//github.com/neo-technology/genai-cloud/tree/main/experiment_tracker
+experiment-tracker-neo4j

@@ -1,0 +1,31 @@
+{
+  "true_positive": 93,
+  "false_positive": 396,
+  "false_negative": 125,
+  "relation_types": [
+    "almaMater",
+    "award",
+    "birthPlace",
+    "capital",
+    "citizenship",
+    "country",
+    "currency",
+    "deathPlace",
+    "demonym",
+    "governmentType",
+    "isPartOf",
+    "knownFor",
+    "language",
+    "leader",
+    "nationality",
+    "officialLanguage",
+    "professionalField",
+    "religion",
+    "residence",
+    "timeZone"
+  ],
+  "precision": 0.1901840490797546,
+  "recall": 0.42660550458715596,
+  "f1": 0.2630834512022631,
+  "avg_time_per_sample": 0.1367829721801135
+}
