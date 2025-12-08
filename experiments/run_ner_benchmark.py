@@ -84,49 +84,52 @@ def main():
     save_results(gliner_result, gliner_metrics, output_dir / "gliner_ner_results.json")
     results_summary.append(("GLiNER", gliner_metrics, gliner_result.average_time_per_sample))
     print()
-    # --- Neo4j GraphRAG ---
-    print("-" * 60)
-    print("Running Neo4j GraphRAG...")
-    print("-" * 60)
+
+    # # --- Neo4j GraphRAG ---
+    # print("-" * 60)
+    # print("Running Neo4j GraphRAG...")
+    # print("-" * 60)
     
-    neo4j_extractor = Neo4jGraphRagEntityExtractor(model_id="gpt-4o")
-    neo4j_runner = NERBenchmarkRunner(data_loader, neo4j_extractor)
-    neo4j_result = neo4j_runner.run()
-    neo4j_metrics = evaluator.evaluate(neo4j_result)
+    # neo4j_extractor = Neo4jGraphRagEntityExtractor(model_id="gpt-4o")
+    # neo4j_runner = NERBenchmarkRunner(data_loader, neo4j_extractor)
+    # neo4j_result = neo4j_runner.run()
+    # neo4j_metrics = evaluator.evaluate(neo4j_result)
     
-    print_metrics(neo4j_metrics)
-    print(f"  Avg time/sample: {neo4j_result.average_time_per_sample:.4f}s")
-    save_results(neo4j_result, neo4j_metrics, output_dir / "neo4j_ner_results.json")
-    results_summary.append(("Neo4j GraphRAG", neo4j_metrics, neo4j_result.average_time_per_sample))
-    print()
+    # print_metrics(neo4j_metrics)
+    # print(f"  Avg time/sample: {neo4j_result.average_time_per_sample:.4f}s")
+    # save_results(neo4j_result, neo4j_metrics, output_dir / "neo4j_ner_results.json")
+    # results_summary.append(("Neo4j GraphRAG", neo4j_metrics, neo4j_result.average_time_per_sample))
+    # print()
     # --- LangExtract ---
-    print("-" * 60)
-    print("Running LangExtract...")
-    print("-" * 60)
+    # print("-" * 60)
+    # print("Running LangExtract...")
+    # print("-" * 60)
     
-    lang_extractor = LangExtractEntityExtractor(model_id="gpt-4o")
-    lang_runner = NERBenchmarkRunner(data_loader, lang_extractor)
-    lang_result = lang_runner.run()
-    lang_metrics = evaluator.evaluate(lang_result)
-    print_metrics(lang_metrics)
-    print(f"  Avg time/sample: {lang_result.average_time_per_sample:.4f}s")
-    save_results(lang_result, lang_metrics, output_dir / "lang_ner_results.json")
-    results_summary.append(("LangExtract", lang_metrics, lang_result.average_time_per_sample))
-    print()
-    # --- Summary ---
-    print("=" * 60)
-    print("SUMMARY")
-    print("=" * 60)
-    header = f"{'Model':<20} {'Precision':<12} {'Recall':<12} {'F1':<12} {'Avg Time':<12}"
-    print(header)
-    print("-" * 68)
+    # lang_extractor = LangExtractEntityExtractor(model_id="gpt-4o")
+    # lang_extractor._set_prompt(data_loader.entity_types)
+    # lang_extractor._set_examples()
+    # lang_runner = NERBenchmarkRunner(data_loader, lang_extractor)
+    # lang_result = lang_runner.run()
+    # lang_metrics = evaluator.evaluate(lang_result)
+    # print_metrics(lang_metrics)
+    # print(f"  Avg time/sample: {lang_result.average_time_per_sample:.4f}s")
+    # save_results(lang_result, lang_metrics, output_dir / "lang_ner_results.json")
+    # results_summary.append(("LangExtract", lang_metrics, lang_result.average_time_per_sample))
+    # print()
+    # # --- Summary ---
+    # print("=" * 60)
+    # print("SUMMARY")
+    # print("=" * 60)
+    # header = f"{'Model':<20} {'Precision':<12} {'Recall':<12} {'F1':<12} {'Avg Time':<12}"
+    # print(header)
+    # print("-" * 68)
     
-    for name, metrics, avg_time in results_summary:
-        row = f"{name:<20} {metrics.precision:<12.4f} {metrics.recall:<12.4f} {metrics.f1:<12.4f} {avg_time:<12.4f}s"
-        print(row)
+    # for name, metrics, avg_time in results_summary:
+    #     row = f"{name:<20} {metrics.precision:<12.4f} {metrics.recall:<12.4f} {metrics.f1:<12.4f} {avg_time:<12.4f}s"
+    #     print(row)
     
-    print()
-    print("Benchmark complete!")
+    # print()
+    # print("Benchmark complete!")
 
 
 if __name__ == "__main__":

@@ -84,20 +84,20 @@ def main():
     print()
     
     # --- Neo4j GraphRAG (uncomment to run) ---
-    # print("-" * 60)
-    # print("Running Neo4j GraphRAG...")
-    # print("-" * 60)
-    # 
-    # neo4j_extractor = Neo4jGraphRAGRelationExtractor(model_id="gpt-4o")
-    # neo4j_runner = REBenchmarkRunner(data_loader, neo4j_extractor)
-    # neo4j_result = neo4j_runner.run()
-    # neo4j_metrics = evaluator.evaluate(neo4j_result)
-    # 
-    # print_metrics(neo4j_metrics)
-    # print(f"  Avg time/sample: {neo4j_result.average_time_per_sample:.4f}s")
-    # save_results(neo4j_result, neo4j_metrics, output_dir / "neo4j_re_results.json")
-    # results_summary.append(("Neo4j GraphRAG", neo4j_metrics, neo4j_result.average_time_per_sample))
-    # print()
+    print("-" * 60)
+    print("Running Neo4j GraphRAG...")
+    print("-" * 60)
+    
+    neo4j_extractor = Neo4jGraphRAGRelationExtractor(model_id="gpt-4o")
+    neo4j_runner = REBenchmarkRunner(data_loader, neo4j_extractor)
+    neo4j_result = neo4j_runner.run()
+    neo4j_metrics = evaluator.evaluate(neo4j_result)
+    
+    print_metrics(neo4j_metrics)
+    print(f"  Avg time/sample: {neo4j_result.average_time_per_sample:.4f}s")
+    save_results(neo4j_result, neo4j_metrics, output_dir / "neo4j_re_results.json")
+    results_summary.append(("Neo4j GraphRAG", neo4j_metrics, neo4j_result.average_time_per_sample))
+    print()
     
     # --- Summary ---
     print("=" * 60)

@@ -1,19 +1,29 @@
 import langextract as lx
 from src.extractors.base import BaseEntityExtractor
 from src.models import Entity
+import textwrap
 
 class LangExtractEntityExtractor(BaseEntityExtractor):
     """LangExtractor-based entity extractor."""
     
     def __init__(self, model_id: str = "gpt-4o"):
         self._model_id = model_id
-        self._extractor = lx.Extractor(model_id=self._model_id)
+        self._extractor = lx
+        self._prompt = None
+        self._examples = None
+
+    @property
+    def model_id(self) -> str:
+        return self._model_id
     
-    self._prompt = textwrap.dedent(f"""
-    Extract the entities with the types of the following: {", ".join(entity_types)}.
-    Use exact text for extraction. Do not paraphrase or overlap entities.
-    """)
-    self._examples = [
+    def _set_prompt(self, entity_types: list[str]):
+        self._prompt = textwrap.dedent(f"""
+        Extract the entities with the types of the following: {", ".join(entity_types)}.
+        Use exact text for extraction. Do not paraphrase or overlap entities.
+        """)
+
+    def _set_examples(self):
+        self._examples = [
         lx.data.ExampleData(
             text="They may also use Adenosine triphosphate, Nitric oxide, and ROS for signaling in the same ways that animals do.",
             extractions=[
@@ -67,8 +77,8 @@ class LangExtractEntityExtractor(BaseEntityExtractor):
     ]
 
     def extract(self, text: str, entity_types: list[str]) -> list[Entity]:
-        extractions = self._extractor.extract(text, prompt=self._prompt.format(entity_types=entity_types), examples=self._examples, model_id=self._model_id, fence_output=True)
+        results = self._extractor.extract(text, self._prompt, examples=self._examples, model_id=self._model_id, fence_output=True)
         entities = []
-        for extraction in extractions:
+        for extraction in results.extractions:
             entities.append(Entity(text=extraction.extraction_text, type=extraction.extraction_class))
         return entities

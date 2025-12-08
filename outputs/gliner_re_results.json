@@ -11,8 +11,8 @@
   },
   "timing": {
     "total_samples": 98,
-    "total_time_seconds": 13.950668334960938,
-    "average_time_per_sample": 0.14235375852000956
+    "total_time_seconds": 13.242944717407227,
+    "average_time_per_sample": 0.13513208895313497
   },
   "results": [
     {
@@ -42,7 +42,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.181229829788208
+      "time_seconds": 0.17107892036437988
     },
     {
       "id": "ont_18_scientist_train_3",
@@ -81,7 +81,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.1507408618927002
+      "time_seconds": 0.14231395721435547
     },
     {
       "id": "ont_18_scientist_train_4",
@@ -100,7 +100,7 @@
           "object": "Economics"
         }
       ],
-      "time_seconds": 0.1397559642791748
+      "time_seconds": 0.12309408187866211
     },
     {
       "id": "ont_18_scientist_train_5",
@@ -139,7 +139,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.13396692276000977
+      "time_seconds": 0.12733697891235352
     },
     {
       "id": "ont_18_scientist_train_6",
@@ -183,7 +183,7 @@
           "object": "Leningrad State University"
         }
       ],
-      "time_seconds": 0.1530320644378662
+      "time_seconds": 0.14194488525390625
     },
     {
       "id": "ont_18_scientist_train_7",
@@ -237,7 +237,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.16773700714111328
+      "time_seconds": 0.15203189849853516
     },
     {
       "id": "ont_18_scientist_train_8",
@@ -281,7 +281,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.13533782958984375
+      "time_seconds": 0.1297600269317627
     },
     {
       "id": "ont_18_scientist_train_9",
@@ -315,7 +315,7 @@
           "object": "Leningrad State University"
         }
       ],
-      "time_seconds": 0.15372514724731445
+      "time_seconds": 0.14279794692993164
     },
     {
       "id": "ont_18_scientist_train_10",
@@ -344,7 +344,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.14578890800476074
+      "time_seconds": 0.14502191543579102
     },
     {
       "id": "ont_18_scientist_train_11",
@@ -378,7 +378,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.1316537857055664
+      "time_seconds": 0.13428306579589844
     },
     {
       "id": "ont_18_scientist_train_12",
@@ -417,7 +417,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.13580799102783203
+      "time_seconds": 0.1342329978942871
     },
     {
       "id": "ont_18_scientist_train_13",
@@ -461,7 +461,7 @@
           "object": "India"
         }
       ],
-      "time_seconds": 0.13562321662902832
+      "time_seconds": 0.13486003875732422
     },
     {
       "id": "ont_18_scientist_train_14",
@@ -510,7 +510,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.13592195510864258
+      "time_seconds": 0.13269782066345215
     },
     {
       "id": "ont_18_scientist_train_15",
@@ -549,7 +549,7 @@
           "object": "Prime Minister"
         }
       ],
-      "time_seconds": 0.14829587936401367
+      "time_seconds": 0.13060832023620605
     },
     {
       "id": "ont_18_scientist_train_16",
@@ -573,7 +573,7 @@
           "object": "Superior Achievement"
         }
       ],
-      "time_seconds": 0.1411290168762207
+      "time_seconds": 0.12417411804199219
     },
     {
       "id": "ont_18_scientist_train_17",
@@ -622,7 +622,7 @@
           "object": "Eastern European Summer Time"
         }
       ],
-      "time_seconds": 0.1491072177886963
+      "time_seconds": 0.13787412643432617
     },
     {
       "id": "ont_18_scientist_train_18",
@@ -696,7 +696,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.15116095542907715
+      "time_seconds": 0.14390802383422852
     },
     {
       "id": "ont_18_scientist_train_19",
@@ -740,7 +740,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.15227508544921875
+      "time_seconds": 0.13843035697937012
     },
     {
       "id": "ont_18_scientist_train_20",
@@ -789,7 +789,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.14983701705932617
+      "time_seconds": 0.13685393333435059
     },
     {
       "id": "ont_18_scientist_train_21",
@@ -853,7 +853,7 @@
           "object": "Istanbul, Turkey"
         }
       ],
-      "time_seconds": 0.13756799697875977
+      "time_seconds": 0.13050436973571777
     },
     {
       "id": "ont_18_scientist_train_23",
@@ -887,7 +887,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.14060187339782715
+      "time_seconds": 0.13201618194580078
     },
     {
       "id": "ont_18_scientist_train_24",
@@ -966,7 +966,7 @@
           "object": "Istanbul, Turkey"
         }
       ],
-      "time_seconds": 0.13935589790344238
+      "time_seconds": 0.13541197776794434
     },
     {
       "id": "ont_18_scientist_train_25",
@@ -1015,7 +1015,7 @@
           "object": "Eastern European Summer Time"
         }
       ],
-      "time_seconds": 0.13898396492004395
+      "time_seconds": 0.1341559886932373
     },
     {
       "id": "ont_18_scientist_train_27",
@@ -1074,7 +1074,7 @@
           "object": "Resadiye"
         }
       ],
-      "time_seconds": 0.14082574844360352
+      "time_seconds": 0.13833117485046387
     },
     {
       "id": "ont_18_scientist_train_28",
@@ -1098,7 +1098,7 @@
           "object": "mathematics"
         }
       ],
-      "time_seconds": 0.12096691131591797
+      "time_seconds": 0.12097406387329102
     },
     {
       "id": "ont_18_scientist_train_29",
@@ -1142,7 +1142,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.17253804206848145
+      "time_seconds": 0.1280820369720459
     },
     {
       "id": "ont_18_scientist_train_30",
@@ -1166,7 +1166,7 @@
           "object": "Leningrad State University"
         }
       ],
-      "time_seconds": 0.1305370330810547
+      "time_seconds": 0.13225221633911133
     },
     {
       "id": "ont_18_scientist_train_31",
@@ -1240,7 +1240,7 @@
           "object": "Eastern European Summer Time"
         }
       ],
-      "time_seconds": 0.14168119430541992
+      "time_seconds": 0.13811588287353516
     },
     {
       "id": "ont_18_scientist_train_32",
@@ -1284,7 +1284,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.12664008140563965
+      "time_seconds": 0.12522482872009277
     },
     {
       "id": "ont_18_scientist_train_33",
@@ -1333,7 +1333,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.14145612716674805
+      "time_seconds": 0.13836407661437988
     },
     {
       "id": "ont_18_scientist_train_35",
@@ -1387,7 +1387,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.1541597843170166
+      "time_seconds": 0.14559674263000488
     },
     {
       "id": "ont_18_scientist_train_36",
@@ -1451,7 +1451,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.14626479148864746
+      "time_seconds": 0.1463170051574707
     },
     {
       "id": "ont_18_scientist_train_37",
@@ -1525,7 +1525,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.14057087898254395
+      "time_seconds": 0.13724017143249512
     },
     {
       "id": "ont_18_scientist_train_38",
@@ -1549,7 +1549,7 @@
           "object": "irreligion"
         }
       ],
-      "time_seconds": 0.12759017944335938
+      "time_seconds": 0.1285569667816162
     },
     {
       "id": "ont_18_scientist_train_39",
@@ -1588,7 +1588,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.12370800971984863
+      "time_seconds": 0.12224531173706055
     },
     {
       "id": "ont_18_scientist_train_40",
@@ -1682,7 +1682,7 @@
           "object": "turnkey"
         }
       ],
-      "time_seconds": 0.14801883697509766
+      "time_seconds": 0.15027403831481934
     },
     {
       "id": "ont_18_scientist_train_43",
@@ -1746,7 +1746,7 @@
           "object": "+2 UTC"
         }
       ],
-      "time_seconds": 0.13652586936950684
+      "time_seconds": 0.1385207176208496
     },
     {
       "id": "ont_18_scientist_train_45",
@@ -1780,7 +1780,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.136124849319458
+      "time_seconds": 0.13818907737731934
     },
     {
       "id": "ont_18_scientist_train_46",
@@ -1804,7 +1804,7 @@
           "object": "Tokat"
         }
       ],
-      "time_seconds": 0.12468099594116211
+      "time_seconds": 0.1243431568145752
     },
     {
       "id": "ont_18_scientist_train_47",
@@ -1833,7 +1833,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.13109087944030762
+      "time_seconds": 0.13057184219360352
     },
     {
       "id": "ont_18_scientist_train_48",
@@ -1907,7 +1907,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.14946818351745605
+      "time_seconds": 0.13979506492614746
     },
     {
       "id": "ont_18_scientist_train_49",
@@ -1976,7 +1976,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.14543509483337402
+      "time_seconds": 0.13597488403320312
     },
     {
       "id": "ont_18_scientist_train_50",
@@ -2010,7 +2010,7 @@
           "object": "economic field"
         }
       ],
-      "time_seconds": 0.15006685256958008
+      "time_seconds": 0.13570594787597656
     },
     {
       "id": "ont_18_scientist_train_51",
@@ -2069,7 +2069,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.16881299018859863
+      "time_seconds": 0.1342790126800537
     },
     {
       "id": "ont_18_scientist_train_52",
@@ -2123,7 +2123,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.1470351219177246
+      "time_seconds": 0.13517308235168457
     },
     {
       "id": "ont_18_scientist_train_53",
@@ -2187,7 +2187,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.14414596557617188
+      "time_seconds": 0.13353991508483887
     },
     {
       "id": "ont_18_scientist_train_54",
@@ -2206,7 +2206,7 @@
           "object": "Tokat Province"
         }
       ],
-      "time_seconds": 0.13482379913330078
+      "time_seconds": 0.1180119514465332
     },
     {
       "id": "ont_18_scientist_train_55",
@@ -2235,7 +2235,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.1395258903503418
+      "time_seconds": 0.12637615203857422
     },
     {
       "id": "ont_18_scientist_train_56",
@@ -2264,7 +2264,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.14182806015014648
+      "time_seconds": 0.1275310516357422
     },
     {
       "id": "ont_18_scientist_train_57",
@@ -2303,7 +2303,7 @@
           "object": "Economics"
         }
       ],
-      "time_seconds": 0.17255187034606934
+      "time_seconds": 0.13305115699768066
     },
     {
       "id": "ont_18_scientist_train_58",
@@ -2322,7 +2322,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.1469430923461914
+      "time_seconds": 0.12756919860839844
     },
     {
       "id": "ont_18_scientist_train_59",
@@ -2386,7 +2386,7 @@
           "object": "St Petersburg"
         }
       ],
-      "time_seconds": 0.17229437828063965
+      "time_seconds": 0.14214825630187988
     },
     {
       "id": "ont_18_scientist_train_60",
@@ -2415,7 +2415,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.13973188400268555
+      "time_seconds": 0.12836909294128418
     },
     {
       "id": "ont_18_scientist_train_62",
@@ -2444,7 +2444,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.1338489055633545
+      "time_seconds": 0.12189698219299316
     },
     {
       "id": "ont_18_scientist_train_63",
@@ -2473,7 +2473,7 @@
           "object": "Re\u015fadiye"
         }
       ],
-      "time_seconds": 0.14188408851623535
+      "time_seconds": 0.12292098999023438
     },
     {
       "id": "ont_18_scientist_train_64",
@@ -2527,7 +2527,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.14507508277893066
+      "time_seconds": 0.13355398178100586
     },
     {
       "id": "ont_18_scientist_train_65",
@@ -2596,7 +2596,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.15219926834106445
+      "time_seconds": 0.1385951042175293
     },
     {
       "id": "ont_18_scientist_train_66",
@@ -2630,7 +2630,7 @@
           "object": "Mathematics"
         }
       ],
-      "time_seconds": 0.12496614456176758
+      "time_seconds": 0.11960983276367188
     },
     {
       "id": "ont_18_scientist_train_67",
@@ -2734,7 +2734,7 @@
           "object": "Tesvikiye"
         }
       ],
-      "time_seconds": 0.14603424072265625
+      "time_seconds": 0.1387310028076172
     },
     {
       "id": "ont_18_scientist_train_68",
@@ -2757,7 +2757,7 @@
         }
       ],
       "predicted": [],
-      "time_seconds": 0.15188193321228027
+      "time_seconds": 0.14113306999206543
     },
     {
       "id": "ont_18_scientist_train_69",
@@ -2786,7 +2786,7 @@
           "object": "Leningrad State University"
         }
       ],
-      "time_seconds": 0.13251709938049316
+      "time_seconds": 0.12752819061279297
     },
     {
       "id": "ont_18_scientist_train_70",
@@ -2815,7 +2815,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.1341547966003418
+      "time_seconds": 0.13323211669921875
     },
     {
       "id": "ont_18_scientist_train_71",
@@ -2849,7 +2849,7 @@
           "object": "Economics"
         }
       ],
-      "time_seconds": 0.12545204162597656
+      "time_seconds": 0.12331008911132812
     },
     {
       "id": "ont_18_scientist_train_72",
@@ -2903,7 +2903,7 @@
           "object": "St Petersburg"
         }
       ],
-      "time_seconds": 0.15267014503479004
+      "time_seconds": 0.14856791496276855
     },
     {
       "id": "ont_18_scientist_train_73",
@@ -2927,7 +2927,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.1440591812133789
+      "time_seconds": 0.16881799697875977
     },
     {
       "id": "ont_18_scientist_train_75",
@@ -2956,7 +2956,7 @@
           "object": "Economics"
         }
       ],
-      "time_seconds": 0.1425769329071045
+      "time_seconds": 0.13104701042175293
     },
     {
       "id": "ont_18_scientist_train_76",
@@ -3045,7 +3045,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.14963102340698242
+      "time_seconds": 0.15811562538146973
     },
     {
       "id": "ont_18_scientist_train_77",
@@ -3084,7 +3084,7 @@
           "object": "Tesvikiye"
         }
       ],
-      "time_seconds": 0.1431722640991211
+      "time_seconds": 0.14590907096862793
     },
     {
       "id": "ont_18_scientist_train_78",
@@ -3153,7 +3153,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.1413288116455078
+      "time_seconds": 0.13731622695922852
     },
     {
       "id": "ont_18_scientist_train_80",
@@ -3202,7 +3202,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.1321418285369873
+      "time_seconds": 0.1324329376220703
     },
     {
       "id": "ont_18_scientist_train_81",
@@ -3231,7 +3231,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.13190078735351562
+      "time_seconds": 0.13624072074890137
     },
     {
       "id": "ont_18_scientist_train_82",
@@ -3305,7 +3305,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.1422898769378662
+      "time_seconds": 0.13895177841186523
     },
     {
       "id": "ont_18_scientist_train_83",
@@ -3344,7 +3344,7 @@
           "object": "Superior Achievement"
         }
       ],
-      "time_seconds": 0.1388092041015625
+      "time_seconds": 0.1371159553527832
     },
     {
       "id": "ont_18_scientist_train_84",
@@ -3388,7 +3388,7 @@
           "object": "Leningrad"
         }
       ],
-      "time_seconds": 0.14602398872375488
+      "time_seconds": 0.1488950252532959
     },
     {
       "id": "ont_18_scientist_train_85",
@@ -3427,7 +3427,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.13625311851501465
+      "time_seconds": 0.14194512367248535
     },
     {
       "id": "ont_18_scientist_train_86",
@@ -3461,7 +3461,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.1291041374206543
+      "time_seconds": 0.13385701179504395
     },
     {
       "id": "ont_18_scientist_train_87",
@@ -3485,7 +3485,7 @@
           "object": "Eastern European time"
         }
       ],
-      "time_seconds": 0.13666009902954102
+      "time_seconds": 0.13587403297424316
     },
     {
       "id": "ont_18_scientist_train_88",
@@ -3564,7 +3564,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.14498186111450195
+      "time_seconds": 0.14043903350830078
     },
     {
       "id": "ont_18_scientist_train_89",
@@ -3593,7 +3593,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.14377188682556152
+      "time_seconds": 0.1402301788330078
     },
     {
       "id": "ont_18_scientist_train_90",
@@ -3632,7 +3632,7 @@
           "object": "Soviet"
         }
       ],
-      "time_seconds": 0.14877796173095703
+      "time_seconds": 0.14791440963745117
     },
     {
       "id": "ont_18_scientist_train_91",
@@ -3676,7 +3676,7 @@
           "object": "St Petersburg"
         }
       ],
-      "time_seconds": 0.14632773399353027
+      "time_seconds": 0.1402299404144287
     },
     {
       "id": "ont_18_scientist_train_92",
@@ -3730,7 +3730,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.14872074127197266
+      "time_seconds": 0.14368700981140137
     },
     {
       "id": "ont_18_scientist_train_93",
@@ -3749,7 +3749,7 @@
           "object": "Tesvikiye"
         }
       ],
-      "time_seconds": 0.1272411346435547
+      "time_seconds": 0.12423396110534668
     },
     {
       "id": "ont_18_scientist_train_94",
@@ -3798,7 +3798,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.13641881942749023
+      "time_seconds": 0.13199806213378906
     },
     {
       "id": "ont_18_scientist_train_95",
@@ -3872,7 +3872,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.1459178924560547
+      "time_seconds": 0.13555097579956055
     },
     {
       "id": "ont_18_scientist_train_97",
@@ -3891,7 +3891,7 @@
           "object": "Bondareva-Shapley theorem"
         }
       ],
-      "time_seconds": 0.1351161003112793
+      "time_seconds": 0.1279609203338623
     },
     {
       "id": "ont_18_scientist_train_98",
@@ -3945,7 +3945,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.13717103004455566
+      "time_seconds": 0.12825608253479004
     },
     {
       "id": "ont_18_scientist_train_99",
@@ -4014,7 +4014,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.1390988826751709
+      "time_seconds": 0.1299588680267334
     },
     {
       "id": "ont_18_scientist_train_100",
@@ -4043,7 +4043,7 @@
           "object": "Turkish"
         }
       ],
-      "time_seconds": 0.13664603233337402
+      "time_seconds": 0.1263573169708252
     },
     {
       "id": "ont_18_scientist_train_101",
@@ -4082,7 +4082,7 @@
           "object": "unitary"
         }
       ],
-      "time_seconds": 0.14241790771484375
+      "time_seconds": 0.12837505340576172
     },
     {
       "id": "ont_18_scientist_train_102",
@@ -4131,7 +4131,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.16053390502929688
+      "time_seconds": 0.14813637733459473
     },
     {
       "id": "ont_18_scientist_train_103",
@@ -4210,7 +4210,7 @@
           "object": "Turkey in Istanbul"
         }
       ],
-      "time_seconds": 0.1431879997253418
+      "time_seconds": 0.13638806343078613
     },
     {
       "id": "ont_18_scientist_train_104",
@@ -4254,7 +4254,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.13666391372680664
+      "time_seconds": 0.128082275390625
     },
     {
       "id": "ont_18_scientist_train_105",
@@ -4283,7 +4283,7 @@
           "object": "Saint Petersburg"
         }
       ],
-      "time_seconds": 0.13230609893798828
+      "time_seconds": 0.12295198440551758
     },
     {
       "id": "ont_18_scientist_train_106",
@@ -4307,7 +4307,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.13227319717407227
+      "time_seconds": 0.12311387062072754
     },
     {
       "id": "ont_18_scientist_train_107",
@@ -4346,7 +4346,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.13518714904785156
+      "time_seconds": 0.12286090850830078
     },
     {
       "id": "ont_18_scientist_train_109",
@@ -4395,7 +4395,7 @@
           "object": "Istanbul"
         }
       ],
-      "time_seconds": 0.15200304985046387
+      "time_seconds": 0.14272785186767578
     },
     {
       "id": "ont_18_scientist_train_110",
@@ -4429,7 +4429,7 @@
           "object": "Turkey"
         }
       ],
-      "time_seconds": 0.12659025192260742
+      "time_seconds": 0.12177777290344238
     }
   ]
 }
