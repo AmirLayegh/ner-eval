@@ -11,6 +11,6 @@ dependencies = [
     "dotenv>=0.9.9",
     "openai>=2.8.1",
     "langextract>=1.1.1",
-    "neo4j-experiment-tracker @ /Users/amir.layeghneo4j.com/genai-cloud/experiment_tracker",
+    
     "pydantic>=2.12.5",
 ]
