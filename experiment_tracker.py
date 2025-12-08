@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(level
 
 from neo4j_experiment_tracker import create_tracker, TrackerType
 
-from src.data.loader import BenchmarkDataLoader
+from src.data.loader import BenchmarkDataLoader, NERBenchmarkDataLoader
 from src.extractors.gliner import GLiNERRelationExtractor, GLiNEREntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRAGRelationExtractor, Neo4jGraphRagEntityExtractor
 from src.runner import REBenchmarkRunner, NERBenchmarkRunner
@@ -103,7 +103,7 @@ def main():
     print("Running Relation Extraction Benchmark with Tracker")
     print("=" * 60 + "\n")
     
-    re_data_loader = BenchmarkDataLoader("data/re/scientist_re_benchmark.json")
+    re_data_loader = BenchmarkDataLoader("datasets/re/scientist_re_benchmark.json")
     re_evaluator = REEvaluator()
     
     # --- GLiNER RE ---
@@ -129,7 +129,7 @@ def main():
         print(f"  Precision: {metrics.precision:.4f}, Recall: {metrics.recall:.4f}, F1: {metrics.f1:.4f}")
         print(f"  Results saved to: {results_file}")
     
-    # --- Neo4j GraphRAG RE (uncomment to run) ---
+    ## --- Neo4j GraphRAG RE ---
     # tracker = create_tracker(
     #     tracker_type=TrackerType.NONE,
     #     experiment_name="relation-extraction",
@@ -159,7 +159,7 @@ def main():
     print("Running NER Benchmark with Tracker")
     print("=" * 60 + "\n")
     
-    ner_data_loader = BenchmarkDataLoader("data/science_ner_benchmark.json")
+    ner_data_loader = NERBenchmarkDataLoader("datasets/ner/science_ner_benchmark.json")
     ner_evaluator = NEREvaluator()
     
     # --- GLiNER NER ---
