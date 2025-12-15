@@ -33,8 +33,8 @@ uv run python experiments/run_ner_benchmark.py
 
 | Task | Models |
 |------|--------|
-| RE | GLiNER2, Neo4j GraphRAG |
-| NER | GLiNER2, Neo4j GraphRAG, LangExtract |
+| RE | GLiNER1, GLiNER2, Neo4j GraphRAG |
+| NER | GLiNER1, GLiNER2, Neo4j GraphRAG, LangExtract |
 
 ## Project Structure
 
