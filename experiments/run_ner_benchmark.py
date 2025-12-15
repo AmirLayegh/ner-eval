@@ -52,7 +52,7 @@ def save_results(result: NERBenchmarkResult, metrics: EvaluationMetrics, output_
 
 def main():
     # Configuration
-    benchmark_path = "data/science_ner_benchmark.json"
+    benchmark_path = "datasets/science_ner_benchmark.json"
     output_dir = Path("result")
     output_dir.mkdir(exist_ok=True)
     

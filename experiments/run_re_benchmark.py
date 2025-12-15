@@ -50,7 +50,7 @@ def save_results(result: REBenchmarkResult, metrics: EvaluationMetrics, output_p
 
 def main():
     # Configuration
-    benchmark_path = "data/re/scientist_re_benchmark.json"
+    benchmark_path = "datasets/re/scientist_re_benchmark.json"
     output_dir = Path("result")
     output_dir.mkdir(exist_ok=True)
     
