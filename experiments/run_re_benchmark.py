@@ -84,9 +84,9 @@ def main():
     results_summary.append(("GLiNER1", gliner1_metrics, gliner1_result.average_time_per_sample))
     print()
     
-    # --- GLiNER ---
+    # --- GLiNER2 ---
     print("-" * 60)
-    print("Running GLiNER...")
+    print("Running GLiNER2...")
     print("-" * 60)
     
     gliner_extractor = GLiNER2RelationExtractor(model_id="fastino/gliner2-base-v1")

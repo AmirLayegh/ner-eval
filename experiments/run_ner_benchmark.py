@@ -70,9 +70,9 @@ def main():
     evaluator = NEREvaluator()
     results_summary = []
     
-    # --- GLiNER ---
+    # --- GLiNER2 ---
     print("-" * 60)
-    print("Running GLiNER...")
+    print("Running GLiNER2...")
     print("-" * 60)
     
     gliner_extractor = GLiNER2EntityExtractor(model_id="fastino/gliner2-base-v1")
@@ -83,7 +83,7 @@ def main():
     print_metrics(gliner_metrics)
     print(f"  Avg time/sample: {gliner_result.average_time_per_sample:.4f}s")
     save_results(gliner_result, gliner_metrics, output_dir / "gliner_ner_results.json")
-    results_summary.append(("GLiNER", gliner_metrics, gliner_result.average_time_per_sample))
+    results_summary.append(("GLiNER2", gliner_metrics, gliner_result.average_time_per_sample))
     print()
 
     # --- GLiNER1 ---
