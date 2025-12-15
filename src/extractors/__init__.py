@@ -1,3 +1,4 @@
 from src.extractors.base import BaseRelationExtractor, BaseEntityExtractor
 from src.extractors.gliner import GLiNERRelationExtractor, GLiNEREntityExtractor
+from src.extractors.gliner1 import GLiNER1RelationExtractor, GLiNER1EntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRAGRelationExtractor, Neo4jGraphRagEntityExtractor  
