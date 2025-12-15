@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(level
 from neo4j_experiment_tracker import create_tracker, TrackerType
 
 from src.data.loader import BenchmarkDataLoader, NERBenchmarkDataLoader
-from src.extractors.gliner import GLiNERRelationExtractor, GLiNEREntityExtractor
+from src.extractors.gliner2 import GLiNER2RelationExtractor, GLiNER2EntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRAGRelationExtractor, Neo4jGraphRagEntityExtractor
 from src.runner import REBenchmarkRunner, NERBenchmarkRunner
 from src.evaluation.metrics import REEvaluator, NEREvaluator
@@ -122,7 +122,7 @@ def main():
         })
         
         print("Running GLiNER RE...")
-        gliner_extractor = GLiNERRelationExtractor(model_id="fastino/gliner2-base-v1")
+        gliner_extractor = GLiNER2RelationExtractor(model_id="fastino/gliner2-base-v1")
         result, metrics = run_re_benchmark("gliner", gliner_extractor, re_data_loader, re_evaluator)
         
         results_file = track_experiment(tracker, "re", "gliner", result, metrics, output_dir)
@@ -178,7 +178,7 @@ def main():
         })
         
         print("Running GLiNER NER...")
-        gliner_ner_extractor = GLiNEREntityExtractor(model_id="fastino/gliner2-base-v1")
+        gliner_ner_extractor = GLiNER2EntityExtractor(model_id="fastino/gliner2-base-v1")
         result, metrics = run_ner_benchmark("gliner", gliner_ner_extractor, ner_data_loader, ner_evaluator)
         
         results_file = track_experiment(tracker, "ner", "gliner", result, metrics, output_dir)

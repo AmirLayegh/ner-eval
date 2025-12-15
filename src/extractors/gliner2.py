@@ -3,7 +3,7 @@ from src.extractors.base import BaseRelationExtractor, BaseEntityExtractor
 from src.models import Triple, Entity
 
 
-class GLiNERRelationExtractor(BaseRelationExtractor):
+class GLiNER2RelationExtractor(BaseRelationExtractor):
     """GLiNER2-based relation extractor."""
     
     def __init__(self, model_id: str = "fastino/gliner2-base-v1"):
@@ -38,7 +38,7 @@ class GLiNERRelationExtractor(BaseRelationExtractor):
         
         return triples
 
-class GLiNEREntityExtractor(BaseEntityExtractor):
+class GLiNER2EntityExtractor(BaseEntityExtractor):
     """GLiNER2-based entity extractor."""
 
     def __init__(self, model_id: str = "fastino/gliner2-base-v1"):

@@ -16,7 +16,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import json
 
 from src.data.loader import BenchmarkDataLoader
-from src.extractors.gliner import GLiNERRelationExtractor
+from src.extractors.gliner2 import GLiNER2RelationExtractor
+from src.extractors.gliner1 import GLiNER1RelationExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRAGRelationExtractor
 from src.runner import REBenchmarkRunner
 from src.evaluation.metrics import REEvaluator
@@ -50,7 +51,7 @@ def save_results(result: REBenchmarkResult, metrics: EvaluationMetrics, output_p
 
 def main():
     # Configuration
-    benchmark_path = "data/re/scientist_re_benchmark.json"
+    benchmark_path = "datasets/re/scientist_re_benchmark.json"
     output_dir = Path("result")
     output_dir.mkdir(exist_ok=True)
     
@@ -67,12 +68,28 @@ def main():
     evaluator = REEvaluator()
     results_summary = []
     
-    # --- GLiNER ---
+    # --- GLiNER1 ---
     print("-" * 60)
-    print("Running GLiNER...")
+    print("Running GLiNER1...")
     print("-" * 60)
     
-    gliner_extractor = GLiNERRelationExtractor(model_id="fastino/gliner2-base-v1")
+    gliner1_extractor = GLiNER1RelationExtractor(model_id="knowledgator/gliner-relex-large-v0.5")
+    gliner1_runner = REBenchmarkRunner(data_loader, gliner1_extractor)
+    gliner1_result = gliner1_runner.run()
+    gliner1_metrics = evaluator.evaluate(gliner1_result)
+    
+    print_metrics(gliner1_metrics)
+    print(f"  Avg time/sample: {gliner1_result.average_time_per_sample:.4f}s")
+    save_results(gliner1_result, gliner1_metrics, output_dir / "gliner1_re_results.json")
+    results_summary.append(("GLiNER1", gliner1_metrics, gliner1_result.average_time_per_sample))
+    print()
+    
+    # --- GLiNER2 ---
+    print("-" * 60)
+    print("Running GLiNER2...")
+    print("-" * 60)
+    
+    gliner_extractor = GLiNER2RelationExtractor(model_id="fastino/gliner2-base-v1")
     gliner_runner = REBenchmarkRunner(data_loader, gliner_extractor)
     gliner_result = gliner_runner.run()
     gliner_metrics = evaluator.evaluate(gliner_result)

@@ -1,3 +1,3 @@
-from src.extractors.gliner import GLiNERRelationExtractor, GLiNEREntityExtractor
+from src.extractors.gliner2 import GLiNER2RelationExtractor, GLiNER2EntityExtractor
 from src.extractors.langextract import LangExtractEntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRAGRelationExtractor, Neo4jGraphRagEntityExtractor
