@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import json
 
 from src.data.loader import NERBenchmarkDataLoader
-from src.extractors.gliner import GLiNEREntityExtractor
+from src.extractors.gliner2 import GLiNER2EntityExtractor
 from src.extractors.gliner1 import GLiNER1RelationExtractor, GLiNER1EntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRagEntityExtractor
 from src.extractors.langextract import LangExtractEntityExtractor
@@ -75,7 +75,7 @@ def main():
     print("Running GLiNER...")
     print("-" * 60)
     
-    gliner_extractor = GLiNEREntityExtractor(model_id="fastino/gliner2-base-v1")
+    gliner_extractor = GLiNER2EntityExtractor(model_id="fastino/gliner2-base-v1")
     gliner_runner = NERBenchmarkRunner(data_loader, gliner_extractor)
     gliner_result = gliner_runner.run()
     gliner_metrics = evaluator.evaluate(gliner_result)
