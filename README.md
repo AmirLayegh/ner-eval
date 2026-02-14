@@ -7,7 +7,7 @@ A comprehensive benchmarking toolkit for comparing Named Entity Recognition (NER
 This benchmark compares multiple extraction approaches:
 - **GLiNER1** - Original GLiNER model
 - **GLiNER2** - Fast, open-source zero-shot model
-- **Neo4j GraphRAG** - LLM-based extraction (GPT-4o)
+- **LLMEntityRelationExtractor** - From neo4j-graphrag package (GPT-4o)
 - **LangExtract** - Structured LLM extraction (NER only)
 
 Evaluated on scientific and entertainment domain datasets with comprehensive entity and relation types.
@@ -19,13 +19,13 @@ Evaluated on scientific and entertainment domain datasets with comprehensive ent
 |-------|-----------|--------|-----|-----------------|
 | **LangExtract** | 0.714 | 0.619 | 0.663 | 1.39s |
 | **GLiNER1** | 0.666 | 0.617 | 0.641 | 0.06s |
-| **Neo4j GraphRAG** | 0.583 | 0.542 | 0.562 | 2.79s |
+| **LLMEntityRelationExtractor** | 0.583 | 0.542 | 0.562 | 2.79s |
 | **GLiNER2** | 0.475 | 0.562 | 0.515 | 0.06s |
 
 ### Named Entity Recognition - Comics Dataset (66 samples)
 | Model | Precision | Recall | F1 | Avg Time/Sample |
 |-------|-----------|--------|-----|-----------------|
-| **Neo4j GraphRAG** | 0.575 | 0.798 | 0.668 | 2.98s |
+| **LLMEntityRelationExtractor** | 0.575 | 0.798 | 0.668 | 2.98s |
 | **GLiNER1** | 0.519 | 0.723 | 0.604 | 0.05s |
 | **LangExtract** | 0.502 | 0.734 | 0.596 | 1.44s |
 | **GLiNER2** | 0.476 | 0.750 | 0.583 | 0.05s |
@@ -33,13 +33,13 @@ Evaluated on scientific and entertainment domain datasets with comprehensive ent
 ### Relation Extraction (RE)
 | Model | Precision | Recall | F1 | Avg Time/Sample |
 |-------|-----------|--------|-----|-----------------|
-| **Neo4j GraphRAG** | 0.547 | 0.537 | 0.542 | 2.56s |
+| **LLMEntityRelationExtractor** | 0.547 | 0.537 | 0.542 | 2.56s |
 | **GLiNER2** | 0.290 | 0.427 | 0.363 | 0.14s |
 | **GLiNER1** | 0.122 | 0.041 | 0.062 | 0.16s |
 
 **Key Findings:**
-- **LangExtract leads NER** on science (F1: 0.663), but **GLiNER1 close behind** (F1: 0.641) at 23x speed
-- **Neo4j GraphRAG best on comics** (F1: 0.668) and **relation extraction** (F1: 0.542)
+- **LangExtract leads NER** on science (F1: 0.663), **GLiNER1 close behind** (F1: 0.641) at 23x speed
+- **LLMEntityRelationExtractor best on comics** (F1: 0.668) and **relation extraction** (F1: 0.542)
 - **GLiNER1 vs GLiNER2**: GLiNER1 significantly better for NER (+0.13 F1), worse for RE
 - **Speed**: GLiNER models 20-50x faster than LLM-based approaches
 
@@ -122,13 +122,13 @@ ner-eval/
 ### Relation Extraction (RE)
 - **GLiNER1** (`knowledgator/gliner-relex-large-v0.5`)
 - **GLiNER2** (`fastino/gliner2-base-v1`)
-- **Neo4j GraphRAG** (with GPT-4o)
+- **LLMEntityRelationExtractor** from neo4j-graphrag (GPT-4o)
 
 ### Named Entity Recognition (NER)
 - **GLiNER1** (`urchade/gliner_medium-v2.1`)
 - **GLiNER2** (`fastino/gliner2-base-v1`)
-- **Neo4j GraphRAG** (with GPT-4o)
-- **LangExtract** (with GPT-4o)
+- **LLMEntityRelationExtractor** from neo4j-graphrag (GPT-4o)
+- **LangExtract** (GPT-4o)
 
 ## 📝 Adding Your Own Models
 
@@ -190,7 +190,7 @@ Create a `.env` file:
 OPENAI_API_KEY=your_api_key_here
 ```
 
-Required only for Neo4j GraphRAG and LangExtract models (LLM-based). GLiNER1 and GLiNER2 work without any API keys.
+Required only for LLMEntityRelationExtractor and LangExtract models (LLM-based). GLiNER1 and GLiNER2 work without any API keys.
 
 ## 🤝 Contributing
 
@@ -206,7 +206,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- [Neo4j GraphRAG](https://github.com/neo4j/neo4j-graphrag-python) by Neo4j team
-- [LangExtract](https://github.com/google/langextract) library
+- [Neo4j GraphRAG](https://github.com/neo4j/neo4j-graphrag-python) - Using `LLMEntityRelationExtractor` component
+- [LangExtract](https://github.com/google/langextract) by Alea Institute
 - GLiNER1 by [urchade](https://huggingface.co/urchade) and [knowledgator](https://huggingface.co/knowledgator)
 - GLiNER2 by [fastino](https://huggingface.co/fastino)
