@@ -2,193 +2,158 @@
 
 ## Executive Summary
 
-Evaluated three extraction approaches across two domains (science and comics):
-- **GLiNER2**: Fast, open-source zero-shot model
-- **Neo4j GraphRAG**: LLM-based extraction with GPT-4o
-- **LangExtract**: Structured LLM extraction with few-shot prompting
+Evaluated four extraction approaches across two domains:
+- **GLiNER1** - Original GLiNER model (urchade/gliner_medium-v2.1)
+- **GLiNER2** - Newer GLiNER model (fastino/gliner2-base-v1)
+- **Neo4j GraphRAG** - LLM-based extraction (GPT-4o)
+- **LangExtract** - Structured LLM extraction (GPT-4o)
 
 ### Key Findings
 
-1. **Domain-dependent performance**: Neo4j GraphRAG leads on comics (F1: 0.668), LangExtract on science (F1: 0.663)
-2. **Simpler entities = higher recall**: All models show 15-25% recall boost on comics vs science
-3. **Neo4j GraphRAG**: Most versatile across domains, best for RE (F1: 0.542)
-4. **GLiNER2**: 20-50x faster with competitive accuracy across all datasets
-5. **LangExtract**: Best on complex scientific entities with structured prompting
+1. **GLiNER1 strong for NER**: F1 0.641 (science) and 0.604 (comics) - competitive with LLMs at 20x speed
+2. **GLiNER2 faster but less accurate**: Better for high-throughput, lower accuracy than GLiNER1
+3. **Domain-dependent winners**: LangExtract (science), Neo4j GraphRAG (comics)
+4. **RE requires LLMs**: Neo4j GraphRAG (F1: 0.531) vastly outperforms GLiNER models
+5. **Speed vs Accuracy**: GLiNER models 20-50x faster than LLMs
 
 ---
 
 ## Named Entity Recognition Results
 
-### Science Dataset (500+ samples, 17 entity types)
+### Science Dataset (543 samples, 3043 entities, 17 types)
 
-| Model | Precision | Recall | F1 | Avg Time |
-|-------|-----------|--------|-----|----------|
-| **LangExtract** | 0.714 | 0.619 | 0.663 | 1.39s |
-| **Neo4j GraphRAG** | 0.583 | 0.542 | 0.562 | 2.79s |
+| Model | Precision | Recall | F1 | Speed |
+|-------|-----------|--------|-----|-------|
+| **LangExtract** | 0.712 | 0.615 | 0.660 | 1.99s |
+| **GLiNER1** | 0.666 | 0.617 | 0.641 | 0.06s |
+| **Neo4j GraphRAG** | 0.592 | 0.560 | 0.575 | 2.83s |
 | **GLiNER2** | 0.475 | 0.562 | 0.515 | 0.06s |
 
 **Analysis:**
-- LangExtract wins with highest precision on complex scientific entities
-- GLiNER2 has best recall but lower precision (more false positives)
-- Neo4j GraphRAG balanced but slower
+- GLiNER1 nearly matches LangExtract (Δ 0.019) at 33x speed
+- GLiNER1 significantly better than GLiNER2 (+0.126 F1)
+- LangExtract has best precision (0.712), GLiNER1 balanced
 
-### Comics Dataset (66 samples, 10 entity types)
+### Comics Dataset (66 samples, 188 entities, 10 types)
 
-| Model | Precision | Recall | F1 | Avg Time |
-|-------|-----------|--------|-----|----------|
+| Model | Precision | Recall | F1 | Speed |
+|-------|-----------|--------|-----|-------|
 | **Neo4j GraphRAG** | 0.575 | 0.798 | 0.668 | 2.98s |
+| **GLiNER1** | 0.519 | 0.723 | 0.604 | 0.05s |
 | **LangExtract** | 0.502 | 0.734 | 0.596 | 1.44s |
 | **GLiNER2** | 0.476 | 0.750 | 0.583 | 0.05s |
 
 **Analysis:**
-- Neo4j GraphRAG leads with best F1 and highest recall (0.798)
-- All models show significantly higher recall on simpler comic entities
-- LangExtract precision drops on general-domain entities
+- Neo4j GraphRAG leads with highest recall (0.798)
+- GLiNER1 beats LangExtract at 30x speed
+- GLiNER1 vs GLiNER2: +0.021 F1, similar speed
 
 ### Cross-Dataset Comparison
 
-| Model | Science F1 | Comics F1 | Δ F1 | Observation |
-|-------|-----------|-----------|------|-------------|
-| **Neo4j GraphRAG** | 0.562 | 0.668 | +0.106 | Best on simpler entities |
-| **LangExtract** | 0.663 | 0.596 | -0.067 | Optimized for science domain |
-| **GLiNER2** | 0.515 | 0.583 | +0.068 | Consistent across domains |
+| Model | Science F1 | Comics F1 | Avg F1 | Speed | Cost |
+|-------|-----------|-----------|--------|-------|------|
+| **GLiNER1** | 0.641 | 0.604 | 0.623 | 0.05s | Free |
+| **LangExtract** | 0.660 | 0.596 | 0.628 | 1.70s | $$$ |
+| **Neo4j GraphRAG** | 0.575 | 0.668 | 0.622 | 2.91s | $$$ |
+| **GLiNER2** | 0.515 | 0.583 | 0.549 | 0.06s | Free |
 
 **Key Insights:**
-- **Neo4j GraphRAG**: +19% F1 improvement on comics (better generalization)
-- **LangExtract**: -10% F1 on comics (few-shot examples were science-focused)
-- **GLiNER2**: +13% F1 on comics (zero-shot adapts well)
-- **Recall boost**: All models show 15-25% higher recall on comics (simpler entities)
+- **GLiNER1**: Best free option, consistent across domains (avg F1: 0.623)
+- **LangExtract**: Slight edge on average but 34x slower
+- **Neo4j GraphRAG**: Best on comics, struggles on science
+- **GLiNER2**: Weakest NER performance
 
 ---
 
 ## Relation Extraction Results
 
-### Scientist RE Benchmark (98 samples, 218 triples, 20 relation types)
+### Scientist RE (98 samples, 218 triples, 20 types)
 
-| Model | Precision | Recall | F1 | Avg Time | TP | FP | FN |
-|-------|-----------|--------|-----|----------|----|----|-----|
-| **Neo4j GraphRAG** | 0.547 | 0.537 | 0.542 | 2.56s | 117 | 97 | 101 |
-| **GLiNER2** | 0.290 | 0.427 | 0.363 | 0.14s | 93 | 396 | 125 |
+| Model | Precision | Recall | F1 | Speed |
+|-------|-----------|--------|-----|-------|
+| **Neo4j GraphRAG** | 0.530 | 0.532 | 0.531 | 2.37s |
+| **GLiNER2** | 0.290 | 0.427 | 0.363 | 0.14s |
+| **GLiNER1** | 0.122 | 0.041 | 0.062 | 0.16s |
 
 **Analysis:**
-- Neo4j GraphRAG: 18x slower but 49% better F1
-- GLiNER2: High recall but very low precision (many false positives)
-- Relation extraction requires semantic reasoning (LLM advantage)
+- Neo4j GraphRAG is the only viable option (F1: 0.531)
+- GLiNER models struggle with relation extraction
+- GLiNER1 particularly poor (F1: 0.062) - not recommended for RE
 
 ---
 
-## Performance by Task Complexity
+## Model Comparison
 
-### Entity Recognition
-| Complexity | Example Types | Best Model | F1 |
-|------------|---------------|------------|-----|
-| **Simple** | Person, Location, Organization | Neo4j GraphRAG | 0.668 |
-| **Medium** | Scientist, University, Award | LangExtract | 0.663 |
-| **Complex** | Enzyme, Protein, Chemical | LangExtract | 0.663 |
+### By Task
 
-### Relation Extraction
-| Complexity | Example Relations | Best Model | F1 |
-|------------|-------------------|------------|-----|
-| **Simple** | birthPlace, deathPlace | Neo4j GraphRAG | 0.542 |
-| **Complex** | knownFor, professionalField | Neo4j GraphRAG | 0.542 |
+| Task | Best Model | F1 | Runner-up | F1 | Speed Winner |
+|------|-----------|-----|-----------|-----|--------------|
+| **Science NER** | LangExtract | 0.660 | GLiNER1 | 0.641 | GLiNER1/2 (0.06s) |
+| **Comics NER** | Neo4j GraphRAG | 0.668 | GLiNER1 | 0.604 | GLiNER1 (0.05s) |
+| **RE** | Neo4j GraphRAG | 0.531 | GLiNER2 | 0.363 | GLiNER2 (0.14s) |
 
----
+### Speed vs Accuracy
 
-## Speed vs Accuracy Trade-off
-
-| Model | Speed Tier | Accuracy Tier | Use Case |
-|-------|-----------|---------------|----------|
-| **GLiNER2** | 🚀 Fast (0.05-0.14s) | ⭐ Good (F1: 0.36-0.58) | High-throughput, real-time |
-| **LangExtract** | 🐌 Slow (1.39-1.44s) | ⭐⭐ Better (F1: 0.60-0.66) | High-accuracy NER on specific domains |
-| **Neo4j GraphRAG** | 🐌🐌 Slowest (2.56-2.98s) | ⭐⭐ Best (F1: 0.54-0.67) | Versatile, RE, knowledge graphs |
-
----
-
-## Cost Analysis (per 1000 samples)
-
-| Model | Time | API Cost* | Best For |
-|-------|------|-----------|----------|
-| **GLiNER2** | 1 min | $0 | Production, high-volume |
-| **LangExtract** | 23 min | ~$2-5 | Domain-specific NER |
-| **Neo4j GraphRAG** | 50 min | ~$5-10 | RE, multi-domain NER |
-
-*Based on GPT-4o pricing (~$2.50/1M input, ~$10/1M output tokens)
+| Model | Avg Speed | Avg F1 (NER) | Cost | Best For |
+|-------|-----------|--------------|------|----------|
+| **GLiNER1** | 0.05s | 0.623 | Free | Production NER, fast & accurate |
+| **GLiNER2** | 0.06s | 0.549 | Free | High-throughput, lower accuracy OK |
+| **LangExtract** | 1.70s | 0.628 | $$$ | Maximum NER accuracy |
+| **Neo4j GraphRAG** | 2.91s | 0.622 | $$$ | RE, cross-domain NER |
 
 ---
 
 ## Recommendations
 
-### By Use Case
+### Named Entity Recognition
+- **Production/Real-time**: GLiNER1 (best free option, F1: 0.62+)
+- **Maximum accuracy**: LangExtract (F1: 0.660) if cost acceptable
+- **Cross-domain**: Neo4j GraphRAG (best generalization)
 
-| Use Case | Recommended Model | Reason |
-|----------|------------------|---------|
-| **Real-time NER** | GLiNER2 | 20-50x faster, zero cost |
-| **Scientific NER** | LangExtract | Best F1 (0.663) on complex entities |
-| **General NER** | Neo4j GraphRAG | Best cross-domain performance |
-| **Relation Extraction** | Neo4j GraphRAG | Only viable option (F1: 0.542) |
-| **Knowledge Graphs** | Neo4j GraphRAG | Entities + relations together |
-| **Budget-constrained** | GLiNER2 | Free, open-source |
-
-### Hybrid Approach
-
-For optimal cost/performance:
-1. **GLiNER2** for initial entity detection (fast, cheap)
-2. **Neo4j GraphRAG** for relation extraction on filtered candidates
-3. **LangExtract** for high-value entities requiring maximum accuracy
+### Relation Extraction
+- **Only viable option**: Neo4j GraphRAG (F1: 0.531)
+- GLiNER models not recommended for RE
 
 ---
 
 ## Methodology
 
-### Evaluation Metrics
-- **Precision**: TP / (TP + FP) - correctness of predictions
-- **Recall**: TP / (TP + FN) - coverage of ground truth
-- **F1**: Harmonic mean of precision and recall
+**Evaluation Metrics:**
+- Precision = TP / (TP + FP)
+- Recall = TP / (TP + FN)
+- F1 = 2 × (Precision × Recall) / (Precision + Recall)
 
-### Matching Criteria
-- Case-insensitive comparison
-- Whitespace normalized
-- Exact text match required
-- For RE: subject, relation, and object must all match
+**Matching:** Case-insensitive, whitespace-normalized, exact text match
 
-### Datasets
-- **Science NER**: 500+ samples, 17 entity types (scientific domain)
-- **Comics NER**: 66 samples, 10 entity types (general domain)
-- **Scientist RE**: 98 samples, 218 triples, 20 relation types
+**Datasets:**
+- Science NER: 543 texts, 3043 entities, 17 types
+- Comics NER: 66 texts, 188 entities, 10 types
+- Scientist RE: 98 texts, 218 triples, 20 relation types
 
 ---
 
 ## Reproducibility
 
 ```bash
-# Install
 uv sync
-
-# Run benchmarks
 uv run python experiments/run_ner_benchmark.py          # Science NER
 uv run python experiments/run_comics_ner_benchmark.py   # Comics NER
 uv run python experiments/run_re_benchmark.py           # RE
-
-# Visualize
-uv run python visualize_results.py
+uv run python visualize_results.py                      # View all results
 ```
-
-Results saved in `result/` directory.
 
 ---
 
 ## Conclusion
 
-**Model Selection Guide:**
-- **Speed critical?** → GLiNER2 (50x faster)
-- **Accuracy critical?** → Domain-dependent (LangExtract for science, Neo4j for comics)
+**Model Selection:**
+- **Need speed + accuracy?** → GLiNER1 (best free option)
+- **Need maximum accuracy?** → LangExtract (marginal gain, high cost)
 - **Need relations?** → Neo4j GraphRAG (only viable option)
-- **Cross-domain?** → Neo4j GraphRAG (best generalization)
-- **Budget-limited?** → GLiNER2 (free, open-source)
+- **Budget limited?** → GLiNER1 (97% of best accuracy, free)
 
-**Key Takeaway**: No single "best" model - choice depends on domain, task, speed, accuracy, and cost requirements.
+**Key Takeaway**: GLiNER1 offers the best cost-performance ratio for NER tasks, achieving near-LLM accuracy at zero cost and 20-30x speed.
 
 ---
 
 *Benchmark version: 0.1.0*
-*Last updated: February 2026*

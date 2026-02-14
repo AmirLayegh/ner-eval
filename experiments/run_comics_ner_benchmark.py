@@ -16,7 +16,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import json
 
 from src.data.loader import NERBenchmarkDataLoader
-from src.extractors.gliner import GLiNEREntityExtractor
+from src.extractors.gliner2 import GLiNER2EntityExtractor
+from src.extractors.gliner1 import GLiNER1EntityExtractor
 from src.extractors.neo4j_graphrag import Neo4jGraphRagEntityExtractor
 from src.extractors.langextract import LangExtractEntityExtractor
 from src.runner import NERBenchmarkRunner
@@ -91,15 +92,31 @@ def main():
     print("Running GLiNER2...")
     print("-" * 60)
     
-    gliner_extractor = GLiNEREntityExtractor(model_id="fastino/gliner2-base-v1")
-    gliner_runner = NERBenchmarkRunner(data_loader, gliner_extractor)
-    gliner_result = gliner_runner.run()
-    gliner_metrics = evaluator.evaluate(gliner_result)
+    gliner2_extractor = GLiNER2EntityExtractor(model_id="fastino/gliner2-base-v1")
+    gliner2_runner = NERBenchmarkRunner(data_loader, gliner2_extractor)
+    gliner2_result = gliner2_runner.run()
+    gliner2_metrics = evaluator.evaluate(gliner2_result)
     
-    print_metrics(gliner_metrics)
-    print(f"  Avg time/sample: {gliner_result.average_time_per_sample:.4f}s")
-    save_results(gliner_result, gliner_metrics, output_dir / "gliner_comics_ner_results.json")
-    results_summary.append(("GLiNER2", gliner_metrics, gliner_result.average_time_per_sample))
+    print_metrics(gliner2_metrics)
+    print(f"  Avg time/sample: {gliner2_result.average_time_per_sample:.4f}s")
+    save_results(gliner2_result, gliner2_metrics, output_dir / "gliner2_comics_ner_results.json")
+    results_summary.append(("GLiNER2", gliner2_metrics, gliner2_result.average_time_per_sample))
+    print()
+
+    # --- GLiNER1 ---
+    print("-" * 60)
+    print("Running GLiNER1...")
+    print("-" * 60)
+    
+    gliner1_extractor = GLiNER1EntityExtractor(model_id="urchade/gliner_medium-v2.1")
+    gliner1_runner = NERBenchmarkRunner(data_loader, gliner1_extractor)
+    gliner1_result = gliner1_runner.run()
+    gliner1_metrics = evaluator.evaluate(gliner1_result)
+    
+    print_metrics(gliner1_metrics)
+    print(f"  Avg time/sample: {gliner1_result.average_time_per_sample:.4f}s")
+    save_results(gliner1_result, gliner1_metrics, output_dir / "gliner1_comics_ner_results.json")
+    results_summary.append(("GLiNER1", gliner1_metrics, gliner1_result.average_time_per_sample))
     print()
 
     # --- Neo4j GraphRAG ---

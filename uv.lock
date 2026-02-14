@@ -905,6 +905,7 @@ name = "ner-bench"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "gliner" },
     { name = "gliner2" },
     { name = "langchain" },
     { name = "langextract" },
@@ -924,6 +925,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "black", marker = "extra == 'dev'", specifier = ">=23.0.0" },
+    { name = "gliner", specifier = ">=0.2.24" },
     { name = "gliner2" },
     { name = "langchain" },
     { name = "langextract", specifier = ">=1.1.1" },
