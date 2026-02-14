@@ -206,7 +206,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
+- [Neo4j GraphRAG](https://github.com/neo4j/neo4j-graphrag-python) by Neo4j team
+- [LangExtract](https://github.com/alea-institute/langextract) library
 - GLiNER1 by [urchade](https://huggingface.co/urchade) and [knowledgator](https://huggingface.co/knowledgator)
 - GLiNER2 by [fastino](https://huggingface.co/fastino)
-- Neo4j GraphRAG team
-- LangExtract library
